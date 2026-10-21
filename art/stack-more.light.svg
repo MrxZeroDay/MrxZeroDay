@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="452" viewBox="0 0 760 452" role="img" aria-label="Libraries, payments, hosting and patterns">
+  <style>
+    text { font-family: 'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; font-size: 13px; }
+    .g { fill: #1a7f37; } .t { fill: #1f2328; } .d { fill: #6e7781; } .m { fill: #57606a; }
+    .blink { animation: b 1s steps(1) infinite; } @keyframes b { 50% { opacity: 0; } }
+    
+  </style>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e8f6ec"/></linearGradient>
+  <clipPath id="f"><rect x="5" y="5" width="750" height="442" rx="10"/></clipPath></defs>
+  <rect x="5" y="5" width="750" height="442" rx="10" fill="url(#bg)" stroke="#b6d9c0" stroke-width="1.5"/>
+  <g clip-path="url(#f)">
+  <rect x="5" y="5" width="750" height="30" fill="#eaeef2"/>
+  <circle cx="24" cy="20" r="5" fill="#ff5f56"/><circle cx="42" cy="20" r="5" fill="#ffbd2e"/><circle cx="60" cy="20" r="5" fill="#27c93f"/>
+  <text x="380" y="24" text-anchor="middle" class="d" style="font-size:12px">ls --all  #  libraries, payments, hosting</text>
+  <text x="28" y="72" fill="#d4502a" font-weight="700">laravel</text>
+  <rect x="130" y="56" width="79" height="24" rx="6" fill="#d4502a" fill-opacity="0.12" stroke="#d4502a" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="169.5" y="72" text-anchor="middle" class="t" style="font-size:12px">Livewire</text>
+  <rect x="217" y="56" width="72" height="24" rx="6" fill="#d4502a" fill-opacity="0.12" stroke="#d4502a" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="253" y="72" text-anchor="middle" class="t" style="font-size:12px">Horizon</text>
+  <rect x="297" y="56" width="72" height="24" rx="6" fill="#d4502a" fill-opacity="0.12" stroke="#d4502a" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="333" y="72" text-anchor="middle" class="t" style="font-size:12px">Sanctum</text>
+  <rect x="377" y="56" width="79" height="24" rx="6" fill="#d4502a" fill-opacity="0.12" stroke="#d4502a" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="416.5" y="72" text-anchor="middle" class="t" style="font-size:12px">Passport</text>
+  <rect x="464" y="56" width="64" height="24" rx="6" fill="#d4502a" fill-opacity="0.12" stroke="#d4502a" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="496" y="72" text-anchor="middle" class="t" style="font-size:12px">Spatie</text>
+  <text x="28" y="112" fill="#1f6feb" font-weight="700">.net</text>
+  <rect x="130" y="96" width="109" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="184.5" y="112" text-anchor="middle" class="t" style="font-size:12px">ASP.NET Core</text>
+  <rect x="247" y="96" width="64" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="279" y="112" text-anchor="middle" class="t" style="font-size:12px">Blazor</text>
+  <rect x="319" y="96" width="94" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="366" y="112" text-anchor="middle" class="t" style="font-size:12px">Quartz.NET</text>
+  <rect x="421" y="96" width="94" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="468" y="112" text-anchor="middle" class="t" style="font-size:12px">JWT Bearer</text>
+  <rect x="523" y="96" width="72" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="559" y="112" text-anchor="middle" class="t" style="font-size:12px">Swagger</text>
+  <rect x="603" y="96" width="64" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="635" y="112" text-anchor="middle" class="t" style="font-size:12px">Radzen</text>
+  <rect x="130" y="128" width="87" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="173.5" y="144" text-anchor="middle" class="t" style="font-size:12px">MudBlazor</text>
+  <rect x="225" y="128" width="146" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="298" y="144" text-anchor="middle" class="t" style="font-size:12px">Blazor-ApexCharts</text>
+  <text x="28" y="184" fill="#0a8fa0" font-weight="700">data</text>
+  <rect x="130" y="168" width="57" height="24" rx="6" fill="#0a8fa0" fill-opacity="0.12" stroke="#0a8fa0" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="158.5" y="184" text-anchor="middle" class="t" style="font-size:12px">MSSQL</text>
+  <rect x="195" y="168" width="64" height="24" rx="6" fill="#0a8fa0" fill-opacity="0.12" stroke="#0a8fa0" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="227" y="184" text-anchor="middle" class="t" style="font-size:12px">EPPlus</text>
+  <rect x="267" y="168" width="50" height="24" rx="6" fill="#0a8fa0" fill-opacity="0.12" stroke="#0a8fa0" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="292" y="184" text-anchor="middle" class="t" style="font-size:12px">NPOI</text>
+  <rect x="325" y="168" width="72" height="24" rx="6" fill="#0a8fa0" fill-opacity="0.12" stroke="#0a8fa0" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="361" y="184" text-anchor="middle" class="t" style="font-size:12px">OpenXml</text>
+  <text x="28" y="224" fill="#b86e00" font-weight="700">payments</text>
+  <rect x="130" y="208" width="64" height="24" rx="6" fill="#b86e00" fill-opacity="0.12" stroke="#b86e00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="162" y="224" text-anchor="middle" class="t" style="font-size:12px">Stripe</text>
+  <rect x="202" y="208" width="64" height="24" rx="6" fill="#b86e00" fill-opacity="0.12" stroke="#b86e00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="234" y="224" text-anchor="middle" class="t" style="font-size:12px">PayPal</text>
+  <rect x="274" y="208" width="50" height="24" rx="6" fill="#b86e00" fill-opacity="0.12" stroke="#b86e00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="299" y="224" text-anchor="middle" class="t" style="font-size:12px">Visa</text>
+  <rect x="332" y="208" width="94" height="24" rx="6" fill="#b86e00" fill-opacity="0.12" stroke="#b86e00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="379" y="224" text-anchor="middle" class="t" style="font-size:12px">Mastercard</text>
+  <rect x="434" y="208" width="50" height="24" rx="6" fill="#b86e00" fill-opacity="0.12" stroke="#b86e00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="459" y="224" text-anchor="middle" class="t" style="font-size:12px">ArCa</text>
+  <rect x="492" y="208" width="116" height="24" rx="6" fill="#b86e00" fill-opacity="0.12" stroke="#b86e00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="550" y="224" text-anchor="middle" class="t" style="font-size:12px">Evocabank API</text>
+  <rect x="130" y="240" width="131" height="24" rx="6" fill="#b86e00" fill-opacity="0.12" stroke="#b86e00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="195.5" y="256" text-anchor="middle" class="t" style="font-size:12px">Custom gateways</text>
+  <text x="28" y="296" fill="#1a7f37" font-weight="700">hosting</text>
+  <rect x="130" y="280" width="87" height="24" rx="6" fill="#1a7f37" fill-opacity="0.12" stroke="#1a7f37" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="173.5" y="296" text-anchor="middle" class="t" style="font-size:12px">FASTPANEL</text>
+  <rect x="225" y="280" width="94" height="24" rx="6" fill="#1a7f37" fill-opacity="0.12" stroke="#1a7f37" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="272" y="296" text-anchor="middle" class="t" style="font-size:12px">ISPmanager</text>
+  <rect x="327" y="280" width="57" height="24" rx="6" fill="#1a7f37" fill-opacity="0.12" stroke="#1a7f37" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="355.5" y="296" text-anchor="middle" class="t" style="font-size:12px">Nginx</text>
+  <text x="28" y="336" fill="#0a8fb5" font-weight="700">cloud</text>
+  <text x="28" y="351" fill="#0a8fb5" fill-opacity="0.7" style="font-size:10px;font-style:italic">occasional</text>
+  <rect x="130" y="320" width="94" height="24" rx="6" fill="#0a8fb5" fill-opacity="0.12" stroke="#0a8fb5" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="177" y="336" text-anchor="middle" class="t" style="font-size:12px">Cloudflare</text>
+  <rect x="232" y="320" width="35" height="24" rx="6" fill="#0a8fb5" fill-opacity="0.12" stroke="#0a8fb5" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="249.5" y="336" text-anchor="middle" class="t" style="font-size:12px">R2</text>
+  <rect x="275" y="320" width="57" height="24" rx="6" fill="#0a8fb5" fill-opacity="0.12" stroke="#0a8fb5" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="303.5" y="336" text-anchor="middle" class="t" style="font-size:12px">MinIO</text>
+  <rect x="340" y="320" width="35" height="24" rx="6" fill="#0a8fb5" fill-opacity="0.12" stroke="#0a8fb5" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="357.5" y="336" text-anchor="middle" class="t" style="font-size:12px">S3</text>
+  <text x="28" y="384" fill="#7c4dcc" font-weight="700">clients</text>
+  <rect x="130" y="368" width="87" height="24" rx="6" fill="#7c4dcc" fill-opacity="0.12" stroke="#7c4dcc" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="173.5" y="384" text-anchor="middle" class="t" style="font-size:12px">FileZilla</text>
+  <rect x="225" y="368" width="64" height="24" rx="6" fill="#7c4dcc" fill-opacity="0.12" stroke="#7c4dcc" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="257" y="384" text-anchor="middle" class="t" style="font-size:12px">WinSCP</text>
+  <rect x="297" y="368" width="57" height="24" rx="6" fill="#7c4dcc" fill-opacity="0.12" stroke="#7c4dcc" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="325.5" y="384" text-anchor="middle" class="t" style="font-size:12px">PuTTY</text>
+  <rect x="362" y="368" width="72" height="24" rx="6" fill="#7c4dcc" fill-opacity="0.12" stroke="#7c4dcc" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="398" y="384" text-anchor="middle" class="t" style="font-size:12px">Termius</text>
+  <text x="28" y="424" fill="#cf222e" font-weight="700">patterns</text>
+  <rect x="130" y="408" width="153" height="24" rx="6" fill="#cf222e" fill-opacity="0.12" stroke="#cf222e" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="206.5" y="424" text-anchor="middle" class="t" style="font-size:12px">Clean Architecture</text>
+  <rect x="291" y="408" width="153" height="24" rx="6" fill="#cf222e" fill-opacity="0.12" stroke="#cf222e" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="367.5" y="424" text-anchor="middle" class="t" style="font-size:12px">Repository Pattern</text>
+  <rect x="452" y="408" width="131" height="24" rx="6" fill="#cf222e" fill-opacity="0.12" stroke="#cf222e" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="517.5" y="424" text-anchor="middle" class="t" style="font-size:12px">Background jobs</text>
+  </g>
+</svg>

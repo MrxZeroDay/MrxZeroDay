@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="266" height="76" viewBox="0 0 266 76" role="img" aria-label="Cloudflare, R2, MinIO, S3">
+  <style>
+    text { font-family: 'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; font-size: 13px; }
+    .g { fill: #1a7f37; } .t { fill: #1f2328; } .d { fill: #6e7781; } .m { fill: #57606a; }
+    .blink { animation: b 1s steps(1) infinite; } @keyframes b { 50% { opacity: 0; } }
+    
+  </style>
+  <g transform="translate(10 4)"><rect width="48" height="48" rx="10" fill="#eaeef2"/><path d="M14 34a7 7 0 0 1 1-13.9A9 9 0 0 1 32.5 17.5 8 8 0 0 1 34 34z" fill="#d96a00" fill-opacity="0.2" stroke="#d96a00" stroke-width="2.8" stroke-linejoin="round"/></g>
+  <text x="34" y="68" text-anchor="middle" class="m" style="font-size:11px">Cloudflare</text>
+  <g transform="translate(76 4)"><rect width="48" height="48" rx="10" fill="#eaeef2"/><path d="M14 34a7 7 0 0 1 1-13.9A9 9 0 0 1 32.5 17.5 8 8 0 0 1 34 34z" fill="none" stroke="#d96a00" stroke-width="2.6" stroke-linejoin="round"/><text x="24" y="31" text-anchor="middle" fill="#d96a00" style="font-size:12px;font-weight:700">R2</text></g>
+  <text x="100" y="68" text-anchor="middle" class="m" style="font-size:11px">R2</text>
+  <g transform="translate(142 4)"><rect width="48" height="48" rx="10" fill="#eaeef2"/><g fill="none" stroke="#c42b4a" stroke-width="2.6" stroke-linejoin="round"><rect x="9" y="10" width="30" height="8" rx="2"/><rect x="9" y="20" width="30" height="8" rx="2"/><rect x="9" y="30" width="30" height="8" rx="2"/></g><circle cx="15" cy="14" r="1.6" fill="#c42b4a"/><circle cx="15" cy="24" r="1.6" fill="#c42b4a"/><circle cx="15" cy="34" r="1.6" fill="#c42b4a"/></g>
+  <text x="166" y="68" text-anchor="middle" class="m" style="font-size:11px">MinIO</text>
+  <g transform="translate(208 4)"><rect width="48" height="48" rx="10" fill="#eaeef2"/><ellipse cx="24" cy="15" rx="12" ry="4" fill="none" stroke="#5f8100" stroke-width="2.6"/><path d="M12 15l3 19c0 2 4 4 9 4s9-2 9-4l3-19" fill="none" stroke="#5f8100" stroke-width="2.6" stroke-linejoin="round"/></g>
+  <text x="232" y="68" text-anchor="middle" class="m" style="font-size:11px">S3</text>
+</svg>

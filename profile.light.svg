@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="298" viewBox="0 0 560 298" role="img" aria-label="Z, MrxZeroDay: full-stack developer, backend by nature, main languages PHP and C#">
+  <style>text { font-family: 'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; font-size: 13px; }</style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e8f6ec"/></linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1a7f37"/><stop offset="0.5" stop-color="#0a8fa0"/><stop offset="1" stop-color="#7c4dcc"/></linearGradient>
+    <clipPath id="frame"><rect x="5" y="5" width="550" height="288" rx="10"/></clipPath>
+    <clipPath id="c0"><rect x="20" y="64" width="0" height="22"><animate attributeName="width" from="0" to="520" dur="0.7s" begin="0.4s" fill="freeze"/></rect></clipPath><clipPath id="c1"><rect x="20" y="90" width="0" height="22"><animate attributeName="width" from="0" to="520" dur="0.7s" begin="1.2s" fill="freeze"/></rect></clipPath><clipPath id="c2"><rect x="20" y="116" width="0" height="22"><animate attributeName="width" from="0" to="520" dur="0.7s" begin="2.0s" fill="freeze"/></rect></clipPath><clipPath id="c3"><rect x="20" y="142" width="0" height="22"><animate attributeName="width" from="0" to="520" dur="0.7s" begin="2.8s" fill="freeze"/></rect></clipPath><clipPath id="c4"><rect x="20" y="168" width="0" height="22"><animate attributeName="width" from="0" to="520" dur="0.7s" begin="3.6s" fill="freeze"/></rect></clipPath><clipPath id="c5"><rect x="20" y="194" width="0" height="22"><animate attributeName="width" from="0" to="520" dur="0.7s" begin="4.4s" fill="freeze"/></rect></clipPath><clipPath id="c6"><rect x="20" y="220" width="0" height="22"><animate attributeName="width" from="0" to="520" dur="0.7s" begin="5.2s" fill="freeze"/></rect></clipPath>
+  </defs>
+  <rect x="5" y="5" width="550" height="288" rx="10" fill="url(#bg)" stroke="#b6d9c0" stroke-width="1.5"/>
+  <g clip-path="url(#frame)">
+    <rect x="5" y="5" width="550" height="30" fill="#eaeef2"/>
+    <rect x="5" y="33" width="550" height="2" fill="url(#bar)" opacity="0.8"/>
+    <circle cx="24" cy="20" r="5" fill="#ff5f56"/><circle cx="42" cy="20" r="5" fill="#ffbd2e"/><circle cx="60" cy="20" r="5" fill="#27c93f"/>
+    <text x="280" y="24" text-anchor="middle" fill="#6e7781" font-size="12">z.profile</text>
+    <text x="28" y="58"><tspan fill="#1a7f37">$</tspan> <tspan fill="#1f2328">cat z.profile</tspan></text>
+    <rect x="14" y="68" width="3" height="14" rx="1.5" fill="#1a7f37"/>
+    <g clip-path="url(#c0)"><text x="28" y="80" xml:space="preserve"><tspan fill="#1a7f37" font-weight="700">name    </tspan><tspan fill="#1f2328">Z</tspan><tspan fill="#6e7781">  //  </tspan><tspan fill="#1a7f37">MrxZeroDay</tspan></text></g>
+    <rect x="14" y="94" width="3" height="14" rx="1.5" fill="#4a56b0"/>
+    <g clip-path="url(#c1)"><text x="28" y="106" xml:space="preserve"><tspan fill="#4a56b0" font-weight="700">main    </tspan><tspan fill="#4a56b0">PHP</tspan><tspan fill="#6e7781">  ·  </tspan><tspan fill="#7c4dcc">C#</tspan></text></g>
+    <rect x="14" y="120" width="3" height="14" rx="1.5" fill="#1f6feb"/>
+    <g clip-path="url(#c2)"><text x="28" y="132" xml:space="preserve"><tspan fill="#1f6feb" font-weight="700">class   </tspan><tspan fill="#1f6feb">full-stack</tspan><tspan fill="#6e7781">, </tspan><tspan fill="#1a7f37">backend</tspan><tspan fill="#1f2328"> by nature</tspan></text></g>
+    <rect x="14" y="146" width="3" height="14" rx="1.5" fill="#b86e00"/>
+    <g clip-path="url(#c3)"><text x="28" y="158" xml:space="preserve"><tspan fill="#b86e00" font-weight="700">craft   </tspan><tspan fill="#b86e00">payment flows</tspan><tspan fill="#6e7781"> · </tspan><tspan fill="#0a8fa0">dashboards</tspan><tspan fill="#6e7781"> · </tspan><tspan fill="#1a7f37">Excel pipelines</tspan></text></g>
+    <rect x="14" y="172" width="3" height="14" rx="1.5" fill="#cf222e"/>
+    <g clip-path="url(#c4)"><text x="28" y="184" xml:space="preserve"><tspan fill="#cf222e" font-weight="700">creed   </tspan><tspan fill="#1a7f37">clean APIs</tspan><tspan fill="#6e7781"> over </tspan><tspan fill="#cf222e">messy frontends</tspan></text></g>
+    <rect x="14" y="198" width="3" height="14" rx="1.5" fill="#0a8fa0"/>
+    <g clip-path="url(#c5)"><text x="28" y="210" xml:space="preserve"><tspan fill="#0a8fa0" font-weight="700">loop    </tspan><tspan fill="#0a8fa0">learn</tspan><tspan fill="#6e7781"> → </tspan><tspan fill="#b86e00">build</tspan><tspan fill="#6e7781"> → </tspan><tspan fill="#1a7f37">ship</tspan><tspan fill="#6e7781"> → </tspan><tspan fill="#7c4dcc">refactor</tspan></text></g>
+    <rect x="14" y="224" width="3" height="14" rx="1.5" fill="#7c4dcc"/>
+    <g clip-path="url(#c6)"><text x="28" y="236" xml:space="preserve"><tspan fill="#7c4dcc" font-weight="700">now     </tspan><tspan fill="#1f2328">private enterprise projects</tspan><tspan fill="#6e7781">  </tspan><tspan fill="#1a7f37">●</tspan></text></g>
+    <text x="28" y="262" opacity="0"><tspan fill="#1a7f37">$</tspan> <tspan fill="#1a7f37">_</tspan><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.01;0.5;0.51;1" dur="1s" begin="6.0s" repeatCount="indefinite"/></text>
+  </g>
+</svg>

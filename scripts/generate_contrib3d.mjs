@@ -44,7 +44,9 @@ const shade = (hex, f) => {
   const c = [n >> 16, (n >> 8) & 255, n & 255].map((v) => Math.round(v * f));
   return `#${c.map((v) => v.toString(16).padStart(2, "0")).join("")}`;
 };
-const PALETTE = ["#1b2430", "#0f6b2a", "#17a336", "#2fd94a", "#39ff14"];
+const LIGHT = process.env.THEME === "light";
+const PALETTE = LIGHT ? ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"] : ["#1b2430", "#0f6b2a", "#17a336", "#2fd94a", "#39ff14"];
+const [SHADE_L, SHADE_R] = LIGHT ? [0.86, 0.72] : [0.68, 0.46];
 const nonzero = days.map((d) => d.contributionCount).filter((c) => c > 0).sort((a, b) => a - b);
 const q = (p) => nonzero[Math.min(nonzero.length - 1, Math.floor(p * nonzero.length))] || 1;
 const cuts = [q(0.25), q(0.5), q(0.75)];
@@ -64,8 +66,8 @@ weeks.forEach((week, w) => {
     bars.push({
       order: w + d,
       svg: `<g class="b" style="animation-delay:${(w * 0.025).toFixed(2)}s"><title>${day.date}: ${c}</title>`
-        + `<polygon points="${pts([l, bo, up(bo), up(l)])}" fill="${shade(col, 0.68)}"/>`
-        + `<polygon points="${pts([bo, r, up(r), up(bo)])}" fill="${shade(col, 0.46)}"/>`
+        + `<polygon points="${pts([l, bo, up(bo), up(l)])}" fill="${shade(col, SHADE_L)}"/>`
+        + `<polygon points="${pts([bo, r, up(r), up(bo)])}" fill="${shade(col, SHADE_R)}"/>`
         + `<polygon points="${pts([up(t), up(r), up(bo), up(l)])}" fill="${col}"/></g>`,
     });
   });
