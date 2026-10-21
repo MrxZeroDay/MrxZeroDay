@@ -13,26 +13,15 @@
 
 ## ⌁ about
 
-<table>
-<tr>
-<td width="60%" valign="top">
-
-<img src="./profile.svg" alt="Z, MrxZeroDay: full-stack developer, backend by nature. Main languages: PHP and C#" width="100%" />
-
-<sub>Most of my work lives in private repositories, so this profile shows only a small part of it.</sub>
-
-</td>
-<td width="40%" valign="top" align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MrxZeroDay&theme=github_dark" alt="Profile details" width="100%" />
-
-</td>
-</tr>
-</table>
-
 <div align="center">
 
+<img src="./profile.svg" alt="Z, MrxZeroDay: full-stack developer, backend by nature. Main languages: PHP and C#" width="560" />
+
+<br>
+
 <img src="./profile-3d-contrib/profile-night-green.svg" alt="Contributions in the last year" width="100%" />
+
+<sub>Most of my work lives in private repositories, so this profile shows only a small part of it.</sub>
 
 </div>
 
@@ -129,6 +118,10 @@
 <br>
 
 <div align="center">
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MrxZeroDay&theme=github_dark" alt="Profile details" height="170" />
+
+<br><br>
 
 <sub><code>> end of transmission_</code></sub>
 
