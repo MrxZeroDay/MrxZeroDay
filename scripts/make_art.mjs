@@ -32,24 +32,25 @@ for (const name of ["main", "also", "tools"]) {
 }
 
 // 2. libraries / payments / hosting card
-const COLORS = { laravel: "#ff7a59", ".net": "#6aa9ff", data: "#56d4dd", payments: "#ffb454", hosting: "#39ff14", clients: "#b388eb", storage: "#4cc9f0", patterns: "#ff7b72" };
+const COLORS = { laravel: "#ff7a59", ".net": "#6aa9ff", data: "#56d4dd", payments: "#ffb454", hosting: "#39ff14", clients: "#b388eb", cloud: "#4cc9f0", patterns: "#ff7b72" };
 const groups = [
   ["laravel", ["Livewire", "Horizon", "Sanctum", "Passport", "Spatie"]],
   [".net", ["ASP.NET Core", "Blazor", "Quartz.NET", "JWT Bearer", "Swagger", "Radzen", "MudBlazor", "Blazor-ApexCharts"]],
   ["data", ["MSSQL", "EPPlus", "NPOI", "OpenXml"]],
   ["payments", ["Stripe", "PayPal", "Visa", "Mastercard", "ArCa", "Evocabank API", "Custom gateways"]],
   ["hosting", ["FASTPANEL", "ISPmanager", "Nginx"]],
-  ["storage", ["Cloudflare", "R2", "MinIO", "S3"]],
+  ["cloud", ["Cloudflare", "R2", "MinIO", "S3"], "occasional"],
   ["clients", ["FileZilla", "WinSCP", "PuTTY", "Termius"]],
   ["patterns", ["Clean Architecture", "Repository Pattern", "Background jobs"]],
 ];
 {
   const W = 760, X0 = 130, MAXX = W - 30, CH = 24, GAP = 8;
   let y = 56, body = "";
-  for (const [label, items] of groups) {
+  for (const [label, items, note] of groups) {
     let x = X0, rowY = y;
     const gc = COLORS[label];
     body += `  <text x="28" y="${rowY + 16}" fill="${gc}" font-weight="700">${esc(label)}</text>\n`;
+    if (note) body += `  <text x="28" y="${rowY + 31}" fill="${gc}" fill-opacity="0.7" style="font-size:10px;font-style:italic">${esc(note)}</text>\n`;
     for (const it of items) {
       const cw = Math.round(it.length * 7.4 + 20);
       if (x + cw > MAXX) { x = X0; rowY += CH + GAP; }
@@ -57,7 +58,7 @@ const groups = [
       body += `  <text x="${x + cw / 2}" y="${rowY + 16}" text-anchor="middle" class="t" style="font-size:12px">${esc(it)}</text>\n`;
       x += cw + GAP;
     }
-    y = rowY + CH + 16;
+    y = rowY + CH + (note ? 24 : 16);
   }
   const H = y + 4;
   const frame = `  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#0a1f12"/></linearGradient>
