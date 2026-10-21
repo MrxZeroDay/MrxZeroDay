@@ -43,11 +43,13 @@
 <br><br>
 <img src="./art/label-also.svg" alt="also" width="320" />
 <br>
-<img src="https://skillicons.dev/icons?i=js,py,html,css,alpinejs&theme=dark&perline=5" alt="Also: JavaScript, Python, HTML, CSS, Alpine.js" />
+<img src="https://skillicons.dev/icons?i=js,nodejs,vue,nuxtjs,py,html,css,alpinejs&theme=dark&perline=8" alt="Also: JavaScript, Node.js, Vue, Nuxt, Python, HTML, CSS, Alpine.js" />
 <br><br>
 <img src="./art/label-tools.svg" alt="tools" width="320" />
 <br>
 <img src="https://skillicons.dev/icons?i=mysql,postgres,redis,docker,git,github,githubactions,nginx,linux,postman&theme=dark&perline=10" alt="Databases and tools" />
+<br>
+<img src="./art/tools-clients.svg" alt="FileZilla, WinSCP, PuTTY, Termius" />
 
 </div>
 

@@ -83,6 +83,22 @@ note("note-private", "Most of my work lives in private repositories, so this pro
 
 note("note-langs", "Languages are counted per repository (including private ones), not as a measure of skill.");
 
+// 3b. FTP / SSH client tiles (no official icons on skillicons, so drawn in the same tile style)
+{
+  const tiles = [
+    ["FileZilla", "#e34c4c", `<path d="M14 30V18m0 0-5 5m5-5 5 5M34 18v12m0 0-5-5m5 5 5-5" stroke="#e34c4c" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`],
+    ["WinSCP", "#4f9dff", `<path d="M10 16h10l3 4h15v14H10z" fill="none" stroke="#4f9dff" stroke-width="2.6" stroke-linejoin="round"/><path d="M19 28h10m0 0-3-3m3 3-3 3" stroke="#4f9dff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`],
+    ["PuTTY", "#39ff14", `<rect x="8" y="11" width="32" height="26" rx="4" fill="none" stroke="#39ff14" stroke-width="2.6"/><path d="M14 20l6 5-6 5M24 31h9" stroke="#39ff14" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`],
+    ["Termius", "#b388eb", `<rect x="8" y="11" width="32" height="26" rx="6" fill="none" stroke="#b388eb" stroke-width="2.6"/><path d="M17 19h14M24 19v13" stroke="#b388eb" stroke-width="3.2" stroke-linecap="round"/>`],
+  ];
+  const TW = 48, G = 18, w = tiles.length * TW + (tiles.length - 1) * G + 20, h = 76;
+  const body = tiles.map(([name, , glyph], i) => {
+    const x = 10 + i * (TW + G);
+    return `  <g transform="translate(${x} 4)"><rect width="${TW}" height="${TW}" rx="10" fill="#242938"/>${glyph}</g>\n  <text x="${x + TW / 2}" y="68" text-anchor="middle" class="m" style="font-size:11px">${name}</text>`;
+  }).join("\n");
+  write("tools-clients", svg(w, h, "FileZilla, WinSCP, PuTTY, Termius", body));
+}
+
 // 4. footer
 write("footer", svg(560, 56, "end of transmission", `  <defs><linearGradient id="a" x1="0" x2="1"><stop offset="0" stop-color="#39ff14" stop-opacity="0"/><stop offset="0.5" stop-color="#39ff14" stop-opacity="0.7"/><stop offset="1" stop-color="#39ff14" stop-opacity="0"/></linearGradient></defs>
   <rect x="40" y="10" width="480" height="1.5" fill="url(#a)"/>
