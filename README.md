@@ -19,13 +19,13 @@
 
 <br>
 
-<img src="./profile-3d-contrib/profile-night-green.svg" alt="Contributions in the last year" width="100%" />
+<img src="./contrib-3d.svg" alt="Contributions in the last year" width="100%" />
 
 <br>
 
 <img src="./langs.svg" alt="Repositories by primary language" width="560" />
 
-<sub>Languages are counted per repository (including private ones), not as a measure of skill.</sub>
+<img src="./art/note-langs.svg" alt="Languages are counted per repository (including private ones), not as a measure of skill." />
 
 <img src="./art/note-private.svg" alt="Most of my work lives in private repositories, so this profile shows only a small part of it." />
 

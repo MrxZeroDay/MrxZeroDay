@@ -1,4 +1,4 @@
-name: 3D Contribution Calendar
+name: Update profile cards
 
 on:
   schedule:
@@ -11,26 +11,28 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+      USERNAME: MrxZeroDay
     steps:
       - uses: actions/checkout@v4
 
-      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
-          USERNAME: MrxZeroDay
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-      - name: Generate stats card
+      - name: Generate 3D contribution calendar
+        run: node scripts/generate_contrib3d.mjs contrib-3d.svg
+
+      - name: Generate stats and language cards
         run: python3 scripts/generate_stats.py stats.svg
-        env:
-          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
-          USERNAME: MrxZeroDay
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add profile-3d-contrib/profile-night-green.svg stats.svg langs.svg
+          git add contrib-3d.svg stats.svg langs.svg
           git diff --cached --quiet && echo "No changes" && exit 0
-          git commit -m "Update 3D contribution calendar"
+          git commit -m "Update profile cards"
           git pull --rebase --autostash origin main
           git push

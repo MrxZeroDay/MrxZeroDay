@@ -78,6 +78,8 @@ function note(name, text) {
 note("note-client", "Client work is private, so there are no public repos to link here.");
 note("note-private", "Most of my work lives in private repositories, so this profile shows only a small part of it.");
 
+note("note-langs", "Languages are counted per repository (including private ones), not as a measure of skill.");
+
 // 4. footer
 write("footer", svg(560, 56, "end of transmission", `  <defs><linearGradient id="a" x1="0" x2="1"><stop offset="0" stop-color="#39ff14" stop-opacity="0"/><stop offset="0.5" stop-color="#39ff14" stop-opacity="0.7"/><stop offset="1" stop-color="#39ff14" stop-opacity="0"/></linearGradient></defs>
   <rect x="40" y="10" width="480" height="1.5" fill="url(#a)"/>
