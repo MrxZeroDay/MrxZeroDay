@@ -119,7 +119,7 @@
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MrxZeroDay&theme=github_dark" alt="Profile details" height="170" />
+<img src="./stats.svg" alt="GitHub stats for the last year" width="560" />
 
 <br><br>
 
