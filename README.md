@@ -21,7 +21,11 @@
 
 <img src="./profile-3d-contrib/profile-night-green.svg" alt="Contributions in the last year" width="100%" />
 
-<sub>Most of my work lives in private repositories, so this profile shows only a small part of it.</sub>
+<br>
+
+<img src="./langs.svg" alt="Repositories by primary language" width="560" />
+
+<sub>Languages are counted per repository (including private ones), not as a measure of skill. Most of my work is private, so the contribution graph above shows only part of it.</sub>
 
 </div>
 

@@ -16,7 +16,7 @@ query($login: String!) {
     followers { totalCount }
     repositories(ownerAffiliations: OWNER, isFork: false, first: 100) {
       totalCount
-      nodes { stargazerCount }
+      nodes { stargazerCount primaryLanguage { name color } }
     }
     contributionsCollection {
       totalCommitContributions
@@ -97,6 +97,51 @@ def render(u):
 """
 
 
+def render_langs(u, top=6):
+    counts = {}
+    for n in u["repositories"]["nodes"]:
+        lang = n["primaryLanguage"]
+        if lang:
+            name, color = lang["name"], lang["color"] or "#39ff14"
+            counts[name] = (counts.get(name, (0, color))[0] + 1, color)
+    ranked = sorted(counts.items(), key=lambda kv: -kv[1][0])[:top]
+    total = sum(c for _, (c, _) in ranked) or 1
+    height = 70 + len(ranked) * 28
+    rows = []
+    for i, (name, (count, color)) in enumerate(ranked):
+        y = 62 + i * 28
+        width = max(6, round(260 * count / ranked[0][1][0]))
+        rows.append(
+            f'<text x="28" y="{y + 12}" class="mono lab">{escape(name)}</text>'
+            f'<rect x="150" y="{y}" width="260" height="14" rx="4" fill="#161b22"/>'
+            f'<rect x="150" y="{y}" width="{width}" height="14" rx="4" fill="{escape(color)}"/>'
+            f'<text x="425" y="{y + 12}" class="mono cnt">{count} repos · {round(100 * count / total)}%</text>'
+        )
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="560" height="{height}" viewBox="0 0 560 {height}" role="img" aria-label="Repositories by primary language">
+  <style>
+    .mono {{ font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; }}
+    .dim {{ fill: #6e7681; font-size: 12px; }}
+    .lab {{ fill: #e6edf3; font-size: 13px; }}
+    .cnt {{ fill: #8b949e; font-size: 12px; }}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#0a1f12"/></linearGradient>
+    <clipPath id="f"><rect x="5" y="5" width="550" height="{height - 10}" rx="10"/></clipPath>
+  </defs>
+  <rect x="5" y="5" width="550" height="{height - 10}" rx="10" fill="url(#bg)" stroke="#1f3a28" stroke-width="1.5"/>
+  <g clip-path="url(#f)">
+    <rect x="5" y="5" width="550" height="30" fill="#161b22"/>
+    <circle cx="24" cy="20" r="5" fill="#ff5f56"/><circle cx="42" cy="20" r="5" fill="#ffbd2e"/><circle cx="60" cy="20" r="5" fill="#27c93f"/>
+    <text x="280" y="24" text-anchor="middle" class="mono dim">repos --by-language</text>
+    {"".join(rows)}
+  </g>
+</svg>
+"""
+
+
 if __name__ == "__main__":
+    user = fetch()
     with open(OUT, "w", encoding="utf-8") as f:
-        f.write(render(fetch()))
+        f.write(render(user))
+    with open(os.path.join(os.path.dirname(OUT) or ".", "langs.svg"), "w", encoding="utf-8") as f:
+        f.write(render_langs(user))
