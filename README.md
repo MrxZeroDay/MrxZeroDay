@@ -32,7 +32,7 @@
 
 <div align="center">
 
-<img src="./contrib-3d.svg" alt="Contributions in the last year" width="100%" />
+<img src="./profile-3d-contrib/profile-night-green.svg" alt="Contributions in the last year" width="100%" />
 
 </div>
 
