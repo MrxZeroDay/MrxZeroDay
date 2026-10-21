@@ -13,29 +13,23 @@
 
 ## ⌁ about
 
-<table>
-<tr>
-<td width="58%" valign="top">
+I'm Z, a full-stack developer who spends most of the time on the backend. I like systems that are simple to reason about: clean APIs, predictable data flow and code that is easy to maintain. I work with Laravel and .NET and keep learning new patterns in both.
 
 ```text
 role      Full-Stack Developer, backend focus
-builds    payment integrations
-          dashboards, reports, Excel exports
+builds    payment integrations, dashboards, reports, Excel exports
 believes  clean APIs over messy frontends
 learning  new .NET and Laravel patterns
 status    private enterprise projects
 ```
 
+<div align="center">
+
+<img src="./contrib-3d.svg" alt="Contributions in the last year" width="100%" />
+
 <sub>Most of my work lives in private repositories, so this profile shows only a small part of it.</sub>
 
-</td>
-<td width="42%" valign="top" align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MrxZeroDay&theme=github_dark" alt="Profile details" width="100%" />
-
-</td>
-</tr>
-</table>
+</div>
 
 <br>
 
@@ -106,17 +100,6 @@ $ status --now
 [building]  private enterprise projects
 [shipping]  payment flows, dashboards, APIs
 ```
-
-<br>
-
-## ⌁ rhythm
-
-<!-- OPTIONAL: generated from my contributions; delete this section if not wanted -->
-<div align="center">
-
-<img src="./contrib-3d.svg" alt="3D contribution graph" width="100%" />
-
-</div>
 
 <br>
 
