@@ -38,6 +38,7 @@ const groups = [
   ["data", ["MSSQL", "EPPlus", "NPOI", "OpenXml"]],
   ["payments", ["Stripe", "PayPal", "Visa", "Mastercard", "ArCa", "Evocabank API", "Custom gateways"]],
   ["hosting", ["FASTPANEL", "ISPmanager", "Nginx"]],
+  ["clients", ["FTP client", "SSH client", "PuTTY", "Termius"]],
   ["patterns", ["Clean Architecture", "Repository Pattern", "Background jobs"]],
 ];
 {
