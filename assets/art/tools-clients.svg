@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="266" height="76" viewBox="0 0 266 76" role="img" aria-label="FileZilla, WinSCP, PuTTY, Termius">
+  <style>
+    text { font-family: 'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; font-size: 13px; }
+    .g { fill: #39ff14; } .t { fill: #e6edf3; } .d { fill: #6e7681; } .m { fill: #8b949e; }
+    .blink { animation: b 1s steps(1) infinite; } @keyframes b { 50% { opacity: 0; } }
+    
+  </style>
+  <g transform="translate(10 4)"><rect width="48" height="48" rx="10" fill="#242938"/><path d="M14 30V18m0 0-5 5m5-5 5 5M34 18v12m0 0-5-5m5 5 5-5" stroke="#e34c4c" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="34" y="68" text-anchor="middle" class="m" style="font-size:11px">FileZilla</text>
+  <g transform="translate(76 4)"><rect width="48" height="48" rx="10" fill="#242938"/><path d="M10 16h10l3 4h15v14H10z" fill="none" stroke="#4f9dff" stroke-width="2.6" stroke-linejoin="round"/><path d="M19 28h10m0 0-3-3m3 3-3 3" stroke="#4f9dff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="100" y="68" text-anchor="middle" class="m" style="font-size:11px">WinSCP</text>
+  <g transform="translate(142 4)"><rect width="48" height="48" rx="10" fill="#242938"/><rect x="8" y="11" width="32" height="26" rx="4" fill="none" stroke="#39ff14" stroke-width="2.6"/><path d="M14 20l6 5-6 5M24 31h9" stroke="#39ff14" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="166" y="68" text-anchor="middle" class="m" style="font-size:11px">PuTTY</text>
+  <g transform="translate(208 4)"><rect width="48" height="48" rx="10" fill="#242938"/><rect x="8" y="11" width="32" height="26" rx="6" fill="none" stroke="#b388eb" stroke-width="2.6"/><path d="M17 19h14M24 19v13" stroke="#b388eb" stroke-width="3.2" stroke-linecap="round"/></g>
+  <text x="232" y="68" text-anchor="middle" class="m" style="font-size:11px">Termius</text>
+</svg>

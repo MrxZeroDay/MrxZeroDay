@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="564" viewBox="0 0 760 564" role="img" aria-label="Библиотеки, платежи, хостинг и паттерны">
+  <style>
+    text { font-family: 'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; font-size: 13px; }
+    .g { fill: #1a7f37; } .t { fill: #1f2328; } .d { fill: #6e7781; } .m { fill: #57606a; }
+    .blink { animation: b 1s steps(1) infinite; } @keyframes b { 50% { opacity: 0; } }
+    
+  </style>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e8f6ec"/></linearGradient>
+  <clipPath id="f"><rect x="5" y="5" width="750" height="554" rx="10"/></clipPath></defs>
+  <rect x="5" y="5" width="750" height="554" rx="10" fill="url(#bg)" stroke="#b6d9c0" stroke-width="1.5"/>
+  <g clip-path="url(#f)">
+  <rect x="5" y="5" width="750" height="30" fill="#eaeef2"/>
+  <circle cx="24" cy="20" r="5" fill="#ff5f56"/><circle cx="42" cy="20" r="5" fill="#ffbd2e"/><circle cx="60" cy="20" r="5" fill="#27c93f"/>
+  <text x="380" y="24" text-anchor="middle" class="d" style="font-size:12px">ls --all  #  библиотеки, платежи, хостинг</text>
+  <text x="28" y="72" fill="#d4502a" font-weight="700">laravel</text>
+  <rect x="130" y="56" width="79" height="24" rx="6" fill="#d4502a" fill-opacity="0.12" stroke="#d4502a" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="169.5" y="72" text-anchor="middle" class="t" style="font-size:12px">Livewire</text>
+  <rect x="217" y="56" width="72" height="24" rx="6" fill="#d4502a" fill-opacity="0.12" stroke="#d4502a" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="253" y="72" text-anchor="middle" class="t" style="font-size:12px">Horizon</text>
+  <rect x="297" y="56" width="72" height="24" rx="6" fill="#d4502a" fill-opacity="0.12" stroke="#d4502a" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="333" y="72" text-anchor="middle" class="t" style="font-size:12px">Sanctum</text>
+  <rect x="377" y="56" width="79" height="24" rx="6" fill="#d4502a" fill-opacity="0.12" stroke="#d4502a" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="416.5" y="72" text-anchor="middle" class="t" style="font-size:12px">Passport</text>
+  <rect x="464" y="56" width="64" height="24" rx="6" fill="#d4502a" fill-opacity="0.12" stroke="#d4502a" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="496" y="72" text-anchor="middle" class="t" style="font-size:12px">Spatie</text>
+  <rect x="536" y="56" width="72" height="24" rx="6" fill="#d4502a" fill-opacity="0.12" stroke="#d4502a" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="572" y="72" text-anchor="middle" class="t" style="font-size:12px">Inertia</text>
+  <rect x="616" y="56" width="50" height="24" rx="6" fill="#d4502a" fill-opacity="0.12" stroke="#d4502a" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="641" y="72" text-anchor="middle" class="t" style="font-size:12px">Pest</text>
+  <rect x="130" y="88" width="72" height="24" rx="6" fill="#d4502a" fill-opacity="0.12" stroke="#d4502a" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="166" y="104" text-anchor="middle" class="t" style="font-size:12px">PHPUnit</text>
+  <text x="28" y="144" fill="#1f6feb" font-weight="700">.net</text>
+  <rect x="130" y="128" width="109" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="184.5" y="144" text-anchor="middle" class="t" style="font-size:12px">ASP.NET Core</text>
+  <rect x="247" y="128" width="138" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="316" y="144" text-anchor="middle" class="t" style="font-size:12px">Entity Framework</text>
+  <rect x="393" y="128" width="64" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="425" y="144" text-anchor="middle" class="t" style="font-size:12px">Dapper</text>
+  <rect x="465" y="128" width="72" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="501" y="144" text-anchor="middle" class="t" style="font-size:12px">SignalR</text>
+  <rect x="545" y="128" width="64" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="577" y="144" text-anchor="middle" class="t" style="font-size:12px">Blazor</text>
+  <rect x="617" y="128" width="94" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="664" y="144" text-anchor="middle" class="t" style="font-size:12px">Quartz.NET</text>
+  <rect x="130" y="160" width="79" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="169.5" y="176" text-anchor="middle" class="t" style="font-size:12px">Hangfire</text>
+  <rect x="217" y="160" width="94" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="264" y="176" text-anchor="middle" class="t" style="font-size:12px">JWT Bearer</text>
+  <rect x="319" y="160" width="72" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="355" y="176" text-anchor="middle" class="t" style="font-size:12px">Swagger</text>
+  <rect x="399" y="160" width="57" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="427.5" y="176" text-anchor="middle" class="t" style="font-size:12px">xUnit</text>
+  <rect x="464" y="160" width="64" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="496" y="176" text-anchor="middle" class="t" style="font-size:12px">Radzen</text>
+  <rect x="536" y="160" width="87" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="579.5" y="176" text-anchor="middle" class="t" style="font-size:12px">MudBlazor</text>
+  <rect x="130" y="192" width="146" height="24" rx="6" fill="#1f6feb" fill-opacity="0.12" stroke="#1f6feb" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="203" y="208" text-anchor="middle" class="t" style="font-size:12px">Blazor-ApexCharts</text>
+  <text x="28" y="248" fill="#a67c00" font-weight="700">frontend</text>
+  <rect x="130" y="232" width="94" height="24" rx="6" fill="#a67c00" fill-opacity="0.12" stroke="#a67c00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="177" y="248" text-anchor="middle" class="t" style="font-size:12px">TypeScript</text>
+  <rect x="232" y="232" width="42" height="24" rx="6" fill="#a67c00" fill-opacity="0.12" stroke="#a67c00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="253" y="248" text-anchor="middle" class="t" style="font-size:12px">Vue</text>
+  <rect x="282" y="232" width="50" height="24" rx="6" fill="#a67c00" fill-opacity="0.12" stroke="#a67c00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="307" y="248" text-anchor="middle" class="t" style="font-size:12px">Nuxt</text>
+  <rect x="340" y="232" width="79" height="24" rx="6" fill="#a67c00" fill-opacity="0.12" stroke="#a67c00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="379.5" y="248" text-anchor="middle" class="t" style="font-size:12px">Tailwind</text>
+  <rect x="427" y="232" width="87" height="24" rx="6" fill="#a67c00" fill-opacity="0.12" stroke="#a67c00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="470.5" y="248" text-anchor="middle" class="t" style="font-size:12px">Bootstrap</text>
+  <rect x="522" y="232" width="50" height="24" rx="6" fill="#a67c00" fill-opacity="0.12" stroke="#a67c00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="547" y="248" text-anchor="middle" class="t" style="font-size:12px">Vite</text>
+  <rect x="580" y="232" width="87" height="24" rx="6" fill="#a67c00" fill-opacity="0.12" stroke="#a67c00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="623.5" y="248" text-anchor="middle" class="t" style="font-size:12px">Alpine.js</text>
+  <text x="28" y="288" fill="#0a8fa0" font-weight="700">данные</text>
+  <rect x="130" y="272" width="57" height="24" rx="6" fill="#0a8fa0" fill-opacity="0.12" stroke="#0a8fa0" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="158.5" y="288" text-anchor="middle" class="t" style="font-size:12px">MSSQL</text>
+  <rect x="195" y="272" width="116" height="24" rx="6" fill="#0a8fa0" fill-opacity="0.12" stroke="#0a8fa0" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="253" y="288" text-anchor="middle" class="t" style="font-size:12px">Elasticsearch</text>
+  <rect x="319" y="272" width="64" height="24" rx="6" fill="#0a8fa0" fill-opacity="0.12" stroke="#0a8fa0" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="351" y="288" text-anchor="middle" class="t" style="font-size:12px">EPPlus</text>
+  <rect x="391" y="272" width="50" height="24" rx="6" fill="#0a8fa0" fill-opacity="0.12" stroke="#0a8fa0" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="416" y="288" text-anchor="middle" class="t" style="font-size:12px">NPOI</text>
+  <rect x="449" y="272" width="72" height="24" rx="6" fill="#0a8fa0" fill-opacity="0.12" stroke="#0a8fa0" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="485" y="288" text-anchor="middle" class="t" style="font-size:12px">OpenXml</text>
+  <text x="28" y="328" fill="#b86e00" font-weight="700">платежи</text>
+  <rect x="130" y="312" width="64" height="24" rx="6" fill="#b86e00" fill-opacity="0.12" stroke="#b86e00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="162" y="328" text-anchor="middle" class="t" style="font-size:12px">Stripe</text>
+  <rect x="202" y="312" width="64" height="24" rx="6" fill="#b86e00" fill-opacity="0.12" stroke="#b86e00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="234" y="328" text-anchor="middle" class="t" style="font-size:12px">PayPal</text>
+  <rect x="274" y="312" width="50" height="24" rx="6" fill="#b86e00" fill-opacity="0.12" stroke="#b86e00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="299" y="328" text-anchor="middle" class="t" style="font-size:12px">Visa</text>
+  <rect x="332" y="312" width="94" height="24" rx="6" fill="#b86e00" fill-opacity="0.12" stroke="#b86e00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="379" y="328" text-anchor="middle" class="t" style="font-size:12px">Mastercard</text>
+  <rect x="434" y="312" width="50" height="24" rx="6" fill="#b86e00" fill-opacity="0.12" stroke="#b86e00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="459" y="328" text-anchor="middle" class="t" style="font-size:12px">ArCa</text>
+  <rect x="492" y="312" width="116" height="24" rx="6" fill="#b86e00" fill-opacity="0.12" stroke="#b86e00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="550" y="328" text-anchor="middle" class="t" style="font-size:12px">Evocabank API</text>
+  <rect x="616" y="312" width="94" height="24" rx="6" fill="#b86e00" fill-opacity="0.12" stroke="#b86e00" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="663" y="328" text-anchor="middle" class="t" style="font-size:12px">Свои шлюзы</text>
+  <text x="28" y="368" fill="#1a7f37" font-weight="700">хостинг</text>
+  <rect x="130" y="352" width="87" height="24" rx="6" fill="#1a7f37" fill-opacity="0.12" stroke="#1a7f37" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="173.5" y="368" text-anchor="middle" class="t" style="font-size:12px">FASTPANEL</text>
+  <rect x="225" y="352" width="94" height="24" rx="6" fill="#1a7f37" fill-opacity="0.12" stroke="#1a7f37" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="272" y="368" text-anchor="middle" class="t" style="font-size:12px">ISPmanager</text>
+  <rect x="327" y="352" width="57" height="24" rx="6" fill="#1a7f37" fill-opacity="0.12" stroke="#1a7f37" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="355.5" y="368" text-anchor="middle" class="t" style="font-size:12px">Nginx</text>
+  <text x="28" y="408" fill="#4d7c0f" font-weight="700">ops</text>
+  <rect x="130" y="392" width="94" height="24" rx="6" fill="#4d7c0f" fill-opacity="0.12" stroke="#4d7c0f" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="177" y="408" text-anchor="middle" class="t" style="font-size:12px">Supervisor</text>
+  <rect x="232" y="392" width="64" height="24" rx="6" fill="#4d7c0f" fill-opacity="0.12" stroke="#4d7c0f" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="264" y="408" text-anchor="middle" class="t" style="font-size:12px">Sentry</text>
+  <rect x="304" y="392" width="124" height="24" rx="6" fill="#4d7c0f" fill-opacity="0.12" stroke="#4d7c0f" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="366" y="408" text-anchor="middle" class="t" style="font-size:12px">GitHub Actions</text>
+  <text x="28" y="448" fill="#0a8fb5" font-weight="700">облако</text>
+  <text x="28" y="463" fill="#0a8fb5" fill-opacity="0.7" style="font-size:10px;font-style:italic">иногда</text>
+  <rect x="130" y="432" width="94" height="24" rx="6" fill="#0a8fb5" fill-opacity="0.12" stroke="#0a8fb5" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="177" y="448" text-anchor="middle" class="t" style="font-size:12px">Cloudflare</text>
+  <rect x="232" y="432" width="35" height="24" rx="6" fill="#0a8fb5" fill-opacity="0.12" stroke="#0a8fb5" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="249.5" y="448" text-anchor="middle" class="t" style="font-size:12px">R2</text>
+  <rect x="275" y="432" width="57" height="24" rx="6" fill="#0a8fb5" fill-opacity="0.12" stroke="#0a8fb5" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="303.5" y="448" text-anchor="middle" class="t" style="font-size:12px">MinIO</text>
+  <rect x="340" y="432" width="35" height="24" rx="6" fill="#0a8fb5" fill-opacity="0.12" stroke="#0a8fb5" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="357.5" y="448" text-anchor="middle" class="t" style="font-size:12px">S3</text>
+  <text x="28" y="496" fill="#7c4dcc" font-weight="700">клиенты</text>
+  <rect x="130" y="480" width="87" height="24" rx="6" fill="#7c4dcc" fill-opacity="0.12" stroke="#7c4dcc" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="173.5" y="496" text-anchor="middle" class="t" style="font-size:12px">FileZilla</text>
+  <rect x="225" y="480" width="64" height="24" rx="6" fill="#7c4dcc" fill-opacity="0.12" stroke="#7c4dcc" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="257" y="496" text-anchor="middle" class="t" style="font-size:12px">WinSCP</text>
+  <rect x="297" y="480" width="57" height="24" rx="6" fill="#7c4dcc" fill-opacity="0.12" stroke="#7c4dcc" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="325.5" y="496" text-anchor="middle" class="t" style="font-size:12px">PuTTY</text>
+  <rect x="362" y="480" width="72" height="24" rx="6" fill="#7c4dcc" fill-opacity="0.12" stroke="#7c4dcc" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="398" y="496" text-anchor="middle" class="t" style="font-size:12px">Termius</text>
+  <text x="28" y="536" fill="#cf222e" font-weight="700">паттерны</text>
+  <rect x="130" y="520" width="153" height="24" rx="6" fill="#cf222e" fill-opacity="0.12" stroke="#cf222e" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="206.5" y="536" text-anchor="middle" class="t" style="font-size:12px">Clean Architecture</text>
+  <rect x="291" y="520" width="153" height="24" rx="6" fill="#cf222e" fill-opacity="0.12" stroke="#cf222e" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="367.5" y="536" text-anchor="middle" class="t" style="font-size:12px">Repository Pattern</text>
+  <rect x="452" y="520" width="124" height="24" rx="6" fill="#cf222e" fill-opacity="0.12" stroke="#cf222e" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="514" y="536" text-anchor="middle" class="t" style="font-size:12px">Фоновые задачи</text>
+  </g>
+</svg>

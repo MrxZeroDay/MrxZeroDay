@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="28" viewBox="0 0 320 28" role="img" aria-label="облако · иногда">
+  <style>
+    text { font-family: 'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; font-size: 13px; }
+    .g { fill: #1a7f37; } .t { fill: #1f2328; } .d { fill: #6e7781; } .m { fill: #57606a; }
+    .blink { animation: b 1s steps(1) infinite; } @keyframes b { 50% { opacity: 0; } }
+    
+  </style>
+  <defs><linearGradient id="l" x1="0" x2="1"><stop offset="0" stop-color="#0a8fb5" stop-opacity="0"/><stop offset="1" stop-color="#0a8fb5" stop-opacity="0.6"/></linearGradient>
+  <linearGradient id="r" x1="1" x2="0"><stop offset="0" stop-color="#0a8fb5" stop-opacity="0"/><stop offset="1" stop-color="#0a8fb5" stop-opacity="0.6"/></linearGradient></defs>
+  <rect x="10" y="13" width="65.9" height="1.5" fill="url(#l)"/>
+  <rect x="244.1" y="13" width="65.9" height="1.5" fill="url(#r)"/>
+  <text x="160" y="18" text-anchor="middle" fill="#0a8fb5">[ облако · иногда ]</text>
+</svg>

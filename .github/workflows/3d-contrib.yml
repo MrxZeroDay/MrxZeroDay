@@ -21,13 +21,15 @@ jobs:
         with:
           node-version: 20
 
-      - name: Generate 3D contribution calendar (dark and light)
+      - name: Generate 3D contribution calendar (EN/RU, dark/light)
         run: |
-          node scripts/generate_contrib3d.mjs contrib-3d.svg
-          THEME=light node scripts/generate_contrib3d.mjs contrib-3d.light.svg
+          node scripts/generate_contrib3d.mjs assets/data/contrib-3d.svg
+          THEME=light node scripts/generate_contrib3d.mjs assets/data/contrib-3d.light.svg
+          LANG_CODE=ru node scripts/generate_contrib3d.mjs assets/data/contrib-3d.ru.svg
+          LANG_CODE=ru THEME=light node scripts/generate_contrib3d.mjs assets/data/contrib-3d.ru.light.svg
 
       - name: Generate stats and language cards
-        run: python3 scripts/generate_stats.py stats.svg
+        run: python3 scripts/generate_stats.py assets/data/stats.svg
 
       - name: Derive light theme variants
         run: node scripts/make_light.mjs
@@ -36,7 +38,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add contrib-3d.svg contrib-3d.light.svg stats.svg stats.light.svg langs.svg langs.light.svg
+          git add assets/data
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "Update profile cards"
           git pull --rebase --autostash origin main

@@ -1,33 +1,56 @@
-// Renders profile.svg: the animated, syntax-coloured `cat z.profile` terminal.
+// Renders profile.svg / profile.ru.svg: the animated, syntax-coloured `cat z.profile` terminal.
 import { writeFileSync } from "node:fs";
 
 const G = "#39ff14", W = "#e6edf3", D = "#6e7681";
-const KEYC = { name: "#39ff14", main: "#8892d8", class: "#6aa9ff", craft: "#ffb454", creed: "#ff7b72", loop: "#56d4dd", now: "#b388eb" };
-const rows = [
-  ["name", [["Z", W], ["  //  ", D], ["MrxZeroDay", G]]],
-  ["main", [["PHP", "#8892d8"], ["  ·  ", D], ["C#", "#b388eb"]]],
-  ["class", [["full-stack", "#6aa9ff"], [", ", D], ["backend", G], [" by nature", W]]],
-  ["craft", [["payment flows", "#ffb454"], [" · ", D], ["dashboards", "#56d4dd"], [" · ", D], ["Excel pipelines", G]]],
-  ["creed", [["clean APIs", G], [" over ", D], ["messy frontends", "#ff7b72"]]],
-  ["loop", [["learn", "#56d4dd"], [" → ", D], ["build", "#ffb454"], [" → ", D], ["ship", G], [" → ", D], ["refactor", "#b388eb"]]],
-  ["now", [["private enterprise projects", W], ["  ", D], ["●", G]]],
-];
+const AMBER = "#ffb454", CYAN = "#56d4dd", VIOLET = "#b388eb", BLUE = "#6aa9ff", RED = "#ff7b72";
+const KEYC = { name: G, main: "#8892d8", class: BLUE, craft: AMBER, creed: RED, loop: CYAN, now: VIOLET };
+
+const CONTENT = {
+  en: {
+    suffix: "",
+    aria: "Z, MrxZeroDay: full-stack developer, backend by nature, main languages PHP and C#",
+    rows: [
+      ["name", [["Z", W], ["  //  ", D], ["MrxZeroDay", G]]],
+      ["main", [["PHP", "#8892d8"], ["  ·  ", D], ["C#", VIOLET]]],
+      ["class", [["full-stack", BLUE], [", ", D], ["backend", G], [" by nature", W]]],
+      ["craft", [["payment flows", AMBER], [" · ", D], ["dashboards", CYAN], [" · ", D], ["Excel pipelines", G]]],
+      ["creed", [["clean APIs", G], [" over ", D], ["messy frontends", RED]]],
+      ["loop", [["learn", CYAN], [" → ", D], ["build", AMBER], [" → ", D], ["ship", G], [" → ", D], ["refactor", VIOLET]]],
+      ["now", [["private enterprise projects", W], ["  ", D], ["●", G]]],
+    ],
+  },
+  ru: {
+    suffix: ".ru",
+    aria: "Z, MrxZeroDay: full-stack разработчик, backend по призванию, основные языки PHP и C#",
+    rows: [
+      ["name", [["Z", W], ["  //  ", D], ["MrxZeroDay", G]]],
+      ["main", [["PHP", "#8892d8"], ["  ·  ", D], ["C#", VIOLET]]],
+      ["class", [["full-stack", BLUE], [", ", D], ["backend", G], [" по призванию", W]]],
+      ["craft", [["платёжные потоки", AMBER], [" · ", D], ["дашборды", CYAN], [" · ", D], ["Excel-пайплайны", G]]],
+      ["creed", [["чистые API", G], [" вместо ", D], ["грязных фронтендов", RED]]],
+      ["loop", [["учусь", CYAN], [" → ", D], ["строю", AMBER], [" → ", D], ["выпускаю", G], [" → ", D], ["рефакторю", VIOLET]]],
+      ["now", [["частные корпоративные проекты", W], ["  ", D], ["●", G]]],
+    ],
+  },
+};
+
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
 const W_PX = 560, X = 28, KEYW = 8, STEP = 26, TOP = 80;
-const H = TOP + rows.length * STEP + 36;
 
-let defs = "", body = "";
-rows.forEach(([key, segs], i) => {
-  const y = TOP + i * STEP, begin = (0.4 + i * 0.8).toFixed(1);
-  defs += `<clipPath id="c${i}"><rect x="20" y="${y - 16}" width="0" height="22"><animate attributeName="width" from="0" to="520" dur="0.7s" begin="${begin}s" fill="freeze"/></rect></clipPath>`;
-  const tspans = segs.map(([t, c]) => `<tspan fill="${c}">${esc(t)}</tspan>`).join("");
-  body += `<rect x="14" y="${y - 12}" width="3" height="14" rx="1.5" fill="${KEYC[key]}"/>
+function render({ suffix, aria, rows }) {
+  const H = TOP + rows.length * STEP + 36;
+  let defs = "", body = "";
+  rows.forEach(([key, segs], i) => {
+    const y = TOP + i * STEP, begin = (0.4 + i * 0.8).toFixed(1);
+    defs += `<clipPath id="c${i}"><rect x="20" y="${y - 16}" width="0" height="22"><animate attributeName="width" from="0" to="520" dur="0.7s" begin="${begin}s" fill="freeze"/></rect></clipPath>`;
+    const tspans = segs.map(([t, c]) => `<tspan fill="${c}">${esc(t)}</tspan>`).join("");
+    body += `<rect x="14" y="${y - 12}" width="3" height="14" rx="1.5" fill="${KEYC[key]}"/>
     <g clip-path="url(#c${i})"><text x="${X}" y="${y}" xml:space="preserve"><tspan fill="${KEYC[key]}" font-weight="700">${key.padEnd(KEYW)}</tspan>${tspans}</text></g>\n    `;
-});
-const cursorY = TOP + rows.length * STEP;
-const cursorBegin = (0.4 + rows.length * 0.8).toFixed(1);
+  });
+  const cursorY = TOP + rows.length * STEP;
+  const cursorBegin = (0.4 + rows.length * 0.8).toFixed(1);
 
-writeFileSync("profile.svg", `<svg xmlns="http://www.w3.org/2000/svg" width="${W_PX}" height="${H}" viewBox="0 0 ${W_PX} ${H}" role="img" aria-label="Z, MrxZeroDay: full-stack developer, backend by nature, main languages PHP and C#">
+  writeFileSync(`assets/core/profile${suffix}.svg`, `<svg xmlns="http://www.w3.org/2000/svg" width="${W_PX}" height="${H}" viewBox="0 0 ${W_PX} ${H}" role="img" aria-label="${esc(aria)}">
   <style>text { font-family: 'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; font-size: 13px; }</style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#0a1f12"/></linearGradient>
@@ -46,4 +69,7 @@ writeFileSync("profile.svg", `<svg xmlns="http://www.w3.org/2000/svg" width="${W
   </g>
 </svg>
 `);
-console.log("profile.svg written");
+}
+
+for (const lang of Object.values(CONTENT)) render(lang);
+console.log("profile.svg, profile.ru.svg written");

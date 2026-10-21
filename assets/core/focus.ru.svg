@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="190" viewBox="0 0 900 190" role="img" aria-label="Текущий фокус: учусь новым паттернам .NET и Laravel, строю частные корпоративные проекты, выпускаю платёжные потоки, дашборды и API">
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; }
+    .p { fill: #39ff14; font-size: 14px; }
+    .k { fill: #0d1117; font-size: 12px; font-weight: 700; }
+    .v { fill: #e6edf3; font-size: 15px; }
+    .dim { fill: #6e7681; font-size: 13px; }
+    .r1 { opacity: 0; animation: in 0.01s linear 0.3s forwards; }
+    .r2 { opacity: 0; animation: in 0.01s linear 1.0s forwards; }
+    .r3 { opacity: 0; animation: in 0.01s linear 1.7s forwards; }
+    .dot { animation: pulse 1.6s ease-in-out infinite; }
+    .cur { animation: blink 1s steps(1) infinite; }
+    @keyframes in { to { opacity: 1; } }
+    @keyframes pulse { 50% { opacity: 0.25; } }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+  <rect x="10" y="10" width="880" height="170" rx="10" fill="#0d1117" stroke="#1f3a28" stroke-width="1.5"/>
+  <text x="32" y="40" class="mono p">$ <tspan fill="#c9d1d9">status --now</tspan></text>
+  <circle class="dot" cx="862" cy="35" r="5" fill="#39ff14"/>
+  <text x="846" y="40" text-anchor="end" class="mono dim">live</text>
+
+  <g class="r1">
+    <rect x="32" y="62" width="104" height="24" rx="5" fill="#39ff14"/>
+    <text x="84" y="78" text-anchor="middle" class="mono k">УЧУСЬ</text>
+    <text x="156" y="79" class="mono v">новым паттернам .NET и Laravel</text>
+  </g>
+  <g class="r2">
+    <rect x="32" y="98" width="104" height="24" rx="5" fill="#39ff14" opacity="0.75"/>
+    <text x="84" y="114" text-anchor="middle" class="mono k">СТРОЮ</text>
+    <text x="156" y="115" class="mono v">частные корпоративные проекты</text>
+  </g>
+  <g class="r3">
+    <rect x="32" y="134" width="104" height="24" rx="5" fill="#39ff14" opacity="0.5"/>
+    <text x="84" y="150" text-anchor="middle" class="mono k">ВЫПУСКАЮ</text>
+    <text x="156" y="151" class="mono v">платёжные потоки, дашборды, API<tspan class="cur" fill="#39ff14">_</tspan></text>
+  </g>
+</svg>

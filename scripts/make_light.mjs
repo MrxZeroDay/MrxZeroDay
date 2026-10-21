@@ -1,4 +1,6 @@
-// Derives *.light.svg variants from the dark SVGs by remapping the palette (run after the dark ones exist).
+// Derives *.light.svg variants from the dark SVGs by remapping the palette.
+// Run after the dark SVGs exist. The 3D graph's light version is generated with THEME=light
+// and only gets its frame/text remapped here.
 import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 
 const MAP = {
@@ -9,12 +11,20 @@ const MAP = {
   "#56d4dd": "#0a8fa0", "#ffb454": "#b86e00", "#b388eb": "#7c4dcc", "#8892d8": "#4a56b0",
   "#6aa9ff": "#1f6feb", "#ff7b72": "#cf222e", "#4cc9f0": "#0a8fb5", "#ff7a59": "#d4502a",
   "#e0425f": "#c42b4a", "#f6821f": "#d96a00", "#4f9dff": "#1f6feb", "#7aa116": "#5f8100",
+  "#ffd866": "#a67c00", "#c3e88d": "#4d7c0f",
 };
 const light = (svg) => svg.replace(/#[0-9a-fA-F]{6}\b/g, (c) => MAP[c.toLowerCase()] ?? c);
 
-const dark = ["header", "profile", "build", "focus", "stats", "langs"].map((n) => `${n}.svg`)
-  .concat(readdirSync("art").filter((f) => f.endsWith(".svg") && !f.endsWith(".light.svg")).map((f) => `art/${f}`));
-for (const f of dark) writeFileSync(f.replace(/\.svg$/, ".light.svg"), light(readFileSync(f, "utf8")));
-// the light 3D graph is generated separately with THEME=light; only its frame/text need remapping
-writeFileSync("contrib-3d.light.svg", light(readFileSync("contrib-3d.light.svg", "utf8")));
-console.log(`light variants written (${dark.length + 1})`);
+const all = readdirSync("assets", { recursive: true }).map((f) => `assets/${f}`.split("\\").join("/")).filter((f) => f.endsWith(".svg"));
+const isLight = (f) => f.endsWith(".light.svg");
+const isGraph = (f) => /contrib-3d/.test(f);
+let n = 0;
+for (const f of all.filter((f) => !isLight(f) && !isGraph(f))) {
+  writeFileSync(f.replace(/\.svg$/, ".light.svg"), light(readFileSync(f, "utf8")));
+  n++;
+}
+for (const f of all.filter((f) => isLight(f) && isGraph(f))) {
+  writeFileSync(f, light(readFileSync(f, "utf8")));
+  n++;
+}
+console.log(`light variants written (${n})`);

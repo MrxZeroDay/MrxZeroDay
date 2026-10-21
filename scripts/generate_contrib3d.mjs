@@ -20,6 +20,11 @@ const cal = payload.data.user.contributionsCollection.contributionCalendar;
 const weeks = cal.weeks;
 
 // ---- stats from real data
+const RU = process.env.LANG_CODE === "ru";
+const plural = (n) => { const a = n % 100, b = n % 10; return a > 10 && a < 20 ? "дней" : b === 1 ? "день" : b >= 2 && b <= 4 ? "дня" : "дней"; };
+const T = RU
+  ? { aria: "вкладов за последний год", cap: "вкладов за последний год", best: "лучший день", longest: "самая длинная серия", current: "текущая серия", less: "мало", more: "много", dayw: plural }
+  : { aria: "contributions in the last year", cap: "contributions in the last year", best: "best day", longest: "longest streak", current: "current streak", less: "less", more: "more", dayw: () => "days" };
 const days = weeks.flatMap((w) => w.contributionDays);
 const max = Math.max(1, ...days.map((d) => d.contributionCount));
 const best = days.reduce((a, b) => (b.contributionCount > a.contributionCount ? b : a));
@@ -80,7 +85,7 @@ const legend = PALETTE.map((c, i) => `<rect x="${legendX + 40 + i * 18}" y="${le
 
 const stat = (x, value, label) => `<text x="${x}" y="${H - 52}" class="num">${value}</text><text x="${x}" y="${H - 34}" class="cap">${label}</text>`;
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${USER}: ${fmt(cal.totalContributions)} contributions in the last year">
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${USER}: ${fmt(cal.totalContributions)} ${T.aria}">
   <style>
     text { font-family: 'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; }
     .dim { fill: #6e7681; font-size: 12px; } .big { fill: #39ff14; font-size: 46px; font-weight: 700; }
@@ -100,13 +105,13 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
     <circle cx="24" cy="20" r="5" fill="#ff5f56"/><circle cx="42" cy="20" r="5" fill="#ffbd2e"/><circle cx="60" cy="20" r="5" fill="#27c93f"/>
     <text x="${W / 2}" y="24" text-anchor="middle" class="dim">git log --graph --year</text>
     <text x="${W - 30}" y="86" text-anchor="end" class="big">${fmt(cal.totalContributions)}</text>
-    <text x="${W - 30}" y="108" text-anchor="end" class="cap">contributions in the last year</text>
+    <text x="${W - 30}" y="108" text-anchor="end" class="cap">${T.cap}</text>
     <text x="${W - 30}" y="124" text-anchor="end" class="cap">${first} → ${last}</text>
     ${bars.map((b) => b.svg).join("\n    ")}
-    ${stat(28, fmt(best.contributionCount), "best day · " + best.date)}
-    ${stat(250, longest + " days", "longest streak")}
-    ${stat(400, current + " days", "current streak")}
-    <text x="${legendX}" y="${legendY}" class="cap">less</text>${legend}<text x="${legendX + 40 + 5 * 18 + 6}" y="${legendY}" class="cap">more</text>
+    ${stat(28, fmt(best.contributionCount), T.best + " · " + best.date)}
+    ${stat(250, longest + " " + T.dayw(longest), T.longest)}
+    ${stat(400, current + " " + T.dayw(current), T.current)}
+    <text x="${legendX}" y="${legendY}" class="cap">${T.less}</text>${legend}<text x="${legendX + 40 + 5 * 18 + 6}" y="${legendY}" class="cap">${T.more}</text>
   </g>
 </svg>
 `;

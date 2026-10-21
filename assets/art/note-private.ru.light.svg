@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="790" height="44" viewBox="0 0 790 44" role="img" aria-label="Большая часть моей работы в приватных репозиториях, поэтому профиль показывает лишь малую её часть.">
+  <style>
+    text { font-family: 'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; font-size: 13px; }
+    .g { fill: #1a7f37; } .t { fill: #1f2328; } .d { fill: #6e7781; } .m { fill: #57606a; }
+    .blink { animation: b 1s steps(1) infinite; } @keyframes b { 50% { opacity: 0; } }
+    
+  </style>
+  <rect x="3" y="3" width="784" height="38" rx="8" fill="#ffffff" stroke="#9ccbab" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <g transform="translate(20 12)" fill="none" stroke="#1a7f37" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="0" y="7" width="14" height="10" rx="2"/><path d="M3 7V5a4 4 0 0 1 8 0v2"/></g>
+  <text x="46" y="26" class="m" style="font-size:12px">Большая часть моей работы в приватных репозиториях, поэтому профиль показывает лишь малую её часть.</text>
+</svg>
