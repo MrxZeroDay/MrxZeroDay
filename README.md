@@ -66,47 +66,55 @@ status    private enterprise projects
 
 <br>
 
-## ⌁ projects
+## ⌁ what i build
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
-**▸ Project One**<br>
-<sub>Short description. `REPLACE`</sub><br><br>
-`Laravel` `MySQL` `Redis`<br><br>
-[repo](https://github.com/MrxZeroDay)
+**▸ Payment integrations**<br>
+<sub>Stripe, PayPal, ArCa, Evocabank API and custom gateways wired into Laravel and .NET backends.</sub><br><br>
+`Laravel` `ASP.NET Core`
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
-**▸ Project Two**<br>
-<sub>Short description. `REPLACE`</sub><br><br>
-`ASP.NET Core` `PostgreSQL`<br><br>
-[repo](https://github.com/MrxZeroDay)
+**▸ Dashboards & reports**<br>
+<sub>Admin panels, analytics views and Excel exports for business data.</sub><br><br>
+`Blazor` `Livewire` `EPPlus`
+
+</td>
+<td width="33%" valign="top">
+
+**▸ APIs & background jobs**<br>
+<sub>Clean REST APIs with auth, queues and scheduled work.</sub><br><br>
+`Sanctum` `JWT` `Horizon` `Quartz.NET`
 
 </td>
 </tr>
 </table>
 
+<sub>Client work is private, so there are no public repos to link here.</sub>
+
 <br>
 
 ## ⌁ focus
 
-| learning | building | next |
-|:---|:---|:---|
-| new .NET and Laravel patterns | private enterprise projects | `REPLACE` |
+```text
+$ status --now
+[learning]  new .NET and Laravel patterns
+[building]  private enterprise projects
+[shipping]  payment flows, dashboards, APIs
+```
 
 <br>
 
 ## ⌁ rhythm
 
-<!-- OPTIONAL: delete this section if the service goes down -->
+<!-- OPTIONAL: generated from my contributions; delete this section if not wanted -->
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=MrxZeroDay&theme=github_dark&utcOffset=4" alt="Productive time" />
-
-<sub>Based on public commits only.</sub>
+<img src="./contrib-3d.svg" alt="3D contribution graph" width="100%" />
 
 </div>
 
