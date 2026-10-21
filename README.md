@@ -17,16 +17,7 @@
 <tr>
 <td width="60%" valign="top">
 
-```text
-$ cat z.profile
-
-name     Z  //  MrxZeroDay
-class    full-stack, backend by nature
-craft    payment flows · dashboards · Excel pipelines
-creed    clean APIs over messy frontends
-loop     learn → build → ship → refactor
-now      private enterprise projects
-```
+<img src="./profile.svg" alt="Z, MrxZeroDay: full-stack developer, backend by nature. Main languages: PHP and C#" width="100%" />
 
 <sub>Most of my work lives in private repositories, so this profile shows only a small part of it.</sub>
 
@@ -51,7 +42,15 @@ now      private enterprise projects
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=php,laravel,cs,dotnet,js,py,html,css,alpinejs&theme=dark&perline=9" alt="Languages and frameworks" />
+<sub><code>main</code></sub>
+<br>
+<img src="https://skillicons.dev/icons?i=php,laravel,cs,dotnet&theme=dark&perline=4" height="64" alt="Main: PHP, Laravel, C#, .NET" />
+<br><br>
+<sub><code>also</code></sub>
+<br>
+<img src="https://skillicons.dev/icons?i=js,py,html,css,alpinejs&theme=dark&perline=5" alt="Also: JavaScript, Python, HTML, CSS, Alpine.js" />
+<br><br>
+<sub><code>tools</code></sub>
 <br>
 <img src="https://skillicons.dev/icons?i=mysql,postgres,redis,docker,git,github,githubactions,nginx,linux,postman&theme=dark&perline=10" alt="Databases and tools" />
 
