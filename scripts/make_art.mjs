@@ -32,13 +32,14 @@ for (const name of ["main", "also", "tools"]) {
 }
 
 // 2. libraries / payments / hosting card
-const COLORS = { laravel: "#ff7a59", ".net": "#6aa9ff", data: "#56d4dd", payments: "#ffb454", hosting: "#39ff14", clients: "#b388eb", patterns: "#ff7b72" };
+const COLORS = { laravel: "#ff7a59", ".net": "#6aa9ff", data: "#56d4dd", payments: "#ffb454", hosting: "#39ff14", clients: "#b388eb", storage: "#4cc9f0", patterns: "#ff7b72" };
 const groups = [
   ["laravel", ["Livewire", "Horizon", "Sanctum", "Passport", "Spatie"]],
   [".net", ["ASP.NET Core", "Blazor", "Quartz.NET", "JWT Bearer", "Swagger", "Radzen", "MudBlazor", "Blazor-ApexCharts"]],
   ["data", ["MSSQL", "EPPlus", "NPOI", "OpenXml"]],
   ["payments", ["Stripe", "PayPal", "Visa", "Mastercard", "ArCa", "Evocabank API", "Custom gateways"]],
   ["hosting", ["FASTPANEL", "ISPmanager", "Nginx"]],
+  ["storage", ["Cloudflare", "R2", "MinIO", "S3"]],
   ["clients", ["FileZilla", "WinSCP", "PuTTY", "Termius"]],
   ["patterns", ["Clean Architecture", "Repository Pattern", "Background jobs"]],
 ];
