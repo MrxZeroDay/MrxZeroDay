@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="230" viewBox="0 0 900 230" role="img" aria-label="What I build: payment integrations, dashboards and reports, APIs and background jobs">
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; }
+    .num { fill: #39ff14; font-size: 12px; opacity: 0.7; }
+    .t { fill: #e6edf3; font-size: 16px; font-weight: 700; }
+    .d { fill: #8b949e; font-size: 12.5px; }
+    .tag { fill: #39ff14; font-size: 11.5px; }
+    .card { fill: #0d1117; stroke: #1f3a28; stroke-width: 1.5; }
+    .glow { fill: none; stroke: #39ff14; stroke-width: 1.5; stroke-dasharray: 40 700; opacity: 0.8; animation: run 6s linear infinite; }
+    .c2 .glow { animation-delay: -2s; }
+    .c3 .glow { animation-delay: -4s; }
+    .chip { fill: #0b3d1e; }
+    @keyframes run { to { stroke-dashoffset: -740; } }
+  </style>
+
+  <g class="c1">
+    <rect class="card" x="10" y="10" width="280" height="210" rx="10"/>
+    <rect class="glow" x="10" y="10" width="280" height="210" rx="10" pathLength="740"/>
+    <text x="28" y="40" class="mono num">01 / payments</text>
+    <text x="28" y="72" class="mono t">Payment integrations</text>
+    <text x="28" y="104" class="mono d">Stripe, PayPal, ArCa, Evocabank</text>
+    <text x="28" y="124" class="mono d">and custom gateways in Laravel</text>
+    <text x="28" y="144" class="mono d">and .NET backends.</text>
+    <rect class="chip" x="28" y="170" width="70" height="26" rx="5"/>
+    <text x="63" y="187" text-anchor="middle" class="mono tag">Laravel</text>
+    <rect class="chip" x="106" y="170" width="108" height="26" rx="5"/>
+    <text x="160" y="187" text-anchor="middle" class="mono tag">ASP.NET Core</text>
+  </g>
+
+  <g class="c2">
+    <rect class="card" x="310" y="10" width="280" height="210" rx="10"/>
+    <rect class="glow" x="310" y="10" width="280" height="210" rx="10" pathLength="740"/>
+    <text x="328" y="40" class="mono num">02 / insight</text>
+    <text x="328" y="72" class="mono t">Dashboards &amp; reports</text>
+    <text x="328" y="104" class="mono d">Admin panels, analytics views</text>
+    <text x="328" y="124" class="mono d">and Excel exports that turn</text>
+    <text x="328" y="144" class="mono d">business data into answers.</text>
+    <rect class="chip" x="328" y="170" width="64" height="26" rx="5"/>
+    <text x="360" y="187" text-anchor="middle" class="mono tag">Blazor</text>
+    <rect class="chip" x="400" y="170" width="76" height="26" rx="5"/>
+    <text x="438" y="187" text-anchor="middle" class="mono tag">Livewire</text>
+    <rect class="chip" x="484" y="170" width="70" height="26" rx="5"/>
+    <text x="519" y="187" text-anchor="middle" class="mono tag">EPPlus</text>
+  </g>
+
+  <g class="c3">
+    <rect class="card" x="610" y="10" width="280" height="210" rx="10"/>
+    <rect class="glow" x="610" y="10" width="280" height="210" rx="10" pathLength="740"/>
+    <text x="628" y="40" class="mono num">03 / backbone</text>
+    <text x="628" y="72" class="mono t">APIs &amp; background jobs</text>
+    <text x="628" y="104" class="mono d">Clean REST APIs with solid</text>
+    <text x="628" y="124" class="mono d">auth, queues and scheduled</text>
+    <text x="628" y="144" class="mono d">work that runs by itself.</text>
+    <rect class="chip" x="628" y="170" width="74" height="26" rx="5"/>
+    <text x="665" y="187" text-anchor="middle" class="mono tag">Sanctum</text>
+    <rect class="chip" x="710" y="170" width="50" height="26" rx="5"/>
+    <text x="735" y="187" text-anchor="middle" class="mono tag">JWT</text>
+    <rect class="chip" x="768" y="170" width="76" height="26" rx="5"/>
+    <text x="806" y="187" text-anchor="middle" class="mono tag">Horizon</text>
+  </g>
+</svg>
