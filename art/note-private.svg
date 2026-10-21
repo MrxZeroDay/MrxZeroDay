@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="747" height="44" viewBox="0 0 747 44" role="img" aria-label="Most of my work lives in private repositories, so this profile shows only a small part of it.">
+  <style>
+    text { font-family: 'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; font-size: 13px; }
+    .g { fill: #39ff14; } .t { fill: #e6edf3; } .d { fill: #6e7681; } .m { fill: #8b949e; }
+    .blink { animation: b 1s steps(1) infinite; } @keyframes b { 50% { opacity: 0; } }
+    
+  </style>
+  <rect x="3" y="3" width="741" height="38" rx="8" fill="#0d1117" stroke="#1f6b35" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <g transform="translate(20 12)" fill="none" stroke="#39ff14" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="0" y="7" width="14" height="10" rx="2"/><path d="M3 7V5a4 4 0 0 1 8 0v2"/></g>
+  <text x="46" y="26" class="m" style="font-size:12px">Most of my work lives in private repositories, so this profile shows only a small part of it.</text>
+</svg>
