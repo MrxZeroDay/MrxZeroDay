@@ -2,6 +2,7 @@
 import { writeFileSync } from "node:fs";
 
 const G = "#39ff14", W = "#e6edf3", D = "#6e7681";
+const KEYC = { name: "#39ff14", main: "#8892d8", class: "#6aa9ff", craft: "#ffb454", creed: "#ff7b72", loop: "#56d4dd", now: "#b388eb" };
 const rows = [
   ["name", [["Z", W], ["  //  ", D], ["MrxZeroDay", G]]],
   ["main", [["PHP", "#8892d8"], ["  ·  ", D], ["C#", "#b388eb"]]],
@@ -20,7 +21,8 @@ rows.forEach(([key, segs], i) => {
   const y = TOP + i * STEP, begin = (0.4 + i * 0.8).toFixed(1);
   defs += `<clipPath id="c${i}"><rect x="20" y="${y - 16}" width="0" height="22"><animate attributeName="width" from="0" to="520" dur="0.7s" begin="${begin}s" fill="freeze"/></rect></clipPath>`;
   const tspans = segs.map(([t, c]) => `<tspan fill="${c}">${esc(t)}</tspan>`).join("");
-  body += `<g clip-path="url(#c${i})"><text x="${X}" y="${y}" xml:space="preserve"><tspan fill="${G}" font-weight="700">${key.padEnd(KEYW)}</tspan>${tspans}</text></g>\n    `;
+  body += `<rect x="14" y="${y - 12}" width="3" height="14" rx="1.5" fill="${KEYC[key]}"/>
+    <g clip-path="url(#c${i})"><text x="${X}" y="${y}" xml:space="preserve"><tspan fill="${KEYC[key]}" font-weight="700">${key.padEnd(KEYW)}</tspan>${tspans}</text></g>\n    `;
 });
 const cursorY = TOP + rows.length * STEP;
 const cursorBegin = (0.4 + rows.length * 0.8).toFixed(1);

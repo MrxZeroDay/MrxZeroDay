@@ -32,13 +32,14 @@ for (const name of ["main", "also", "tools"]) {
 }
 
 // 2. libraries / payments / hosting card
+const COLORS = { laravel: "#ff7a59", ".net": "#6aa9ff", data: "#56d4dd", payments: "#ffb454", hosting: "#39ff14", clients: "#b388eb", patterns: "#ff7b72" };
 const groups = [
   ["laravel", ["Livewire", "Horizon", "Sanctum", "Passport", "Spatie"]],
   [".net", ["ASP.NET Core", "Blazor", "Quartz.NET", "JWT Bearer", "Swagger", "Radzen", "MudBlazor", "Blazor-ApexCharts"]],
   ["data", ["MSSQL", "EPPlus", "NPOI", "OpenXml"]],
   ["payments", ["Stripe", "PayPal", "Visa", "Mastercard", "ArCa", "Evocabank API", "Custom gateways"]],
   ["hosting", ["FASTPANEL", "ISPmanager", "Nginx"]],
-  ["clients", ["FTP client", "SSH client", "PuTTY", "Termius"]],
+  ["clients", ["FileZilla", "WinSCP", "PuTTY", "Termius"]],
   ["patterns", ["Clean Architecture", "Repository Pattern", "Background jobs"]],
 ];
 {
@@ -46,11 +47,12 @@ const groups = [
   let y = 56, body = "";
   for (const [label, items] of groups) {
     let x = X0, rowY = y;
-    body += `  <text x="28" y="${rowY + 16}" class="g">${esc(label)}</text>\n`;
+    const gc = COLORS[label];
+    body += `  <text x="28" y="${rowY + 16}" fill="${gc}" font-weight="700">${esc(label)}</text>\n`;
     for (const it of items) {
       const cw = Math.round(it.length * 7.4 + 20);
       if (x + cw > MAXX) { x = X0; rowY += CH + GAP; }
-      body += `  <rect x="${x}" y="${rowY}" width="${cw}" height="${CH}" rx="6" fill="#0b3d1e" stroke="#1f6b35" stroke-width="1"/>\n`;
+      body += `  <rect x="${x}" y="${rowY}" width="${cw}" height="${CH}" rx="6" fill="${gc}" fill-opacity="0.12" stroke="${gc}" stroke-opacity="0.55" stroke-width="1"/>\n`;
       body += `  <text x="${x + cw / 2}" y="${rowY + 16}" text-anchor="middle" class="t" style="font-size:12px">${esc(it)}</text>\n`;
       x += cw + GAP;
     }

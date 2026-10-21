@@ -13,13 +13,20 @@
     <circle cx="24" cy="20" r="5" fill="#ff5f56"/><circle cx="42" cy="20" r="5" fill="#ffbd2e"/><circle cx="60" cy="20" r="5" fill="#27c93f"/>
     <text x="280" y="24" text-anchor="middle" fill="#6e7681" font-size="12">z.profile</text>
     <text x="28" y="58"><tspan fill="#39ff14">$</tspan> <tspan fill="#e6edf3">cat z.profile</tspan></text>
+    <rect x="14" y="68" width="3" height="14" rx="1.5" fill="#39ff14"/>
     <g clip-path="url(#c0)"><text x="28" y="80" xml:space="preserve"><tspan fill="#39ff14" font-weight="700">name    </tspan><tspan fill="#e6edf3">Z</tspan><tspan fill="#6e7681">  //  </tspan><tspan fill="#39ff14">MrxZeroDay</tspan></text></g>
-    <g clip-path="url(#c1)"><text x="28" y="106" xml:space="preserve"><tspan fill="#39ff14" font-weight="700">main    </tspan><tspan fill="#8892d8">PHP</tspan><tspan fill="#6e7681">  ·  </tspan><tspan fill="#b388eb">C#</tspan></text></g>
-    <g clip-path="url(#c2)"><text x="28" y="132" xml:space="preserve"><tspan fill="#39ff14" font-weight="700">class   </tspan><tspan fill="#6aa9ff">full-stack</tspan><tspan fill="#6e7681">, </tspan><tspan fill="#39ff14">backend</tspan><tspan fill="#e6edf3"> by nature</tspan></text></g>
-    <g clip-path="url(#c3)"><text x="28" y="158" xml:space="preserve"><tspan fill="#39ff14" font-weight="700">craft   </tspan><tspan fill="#ffb454">payment flows</tspan><tspan fill="#6e7681"> · </tspan><tspan fill="#56d4dd">dashboards</tspan><tspan fill="#6e7681"> · </tspan><tspan fill="#39ff14">Excel pipelines</tspan></text></g>
-    <g clip-path="url(#c4)"><text x="28" y="184" xml:space="preserve"><tspan fill="#39ff14" font-weight="700">creed   </tspan><tspan fill="#39ff14">clean APIs</tspan><tspan fill="#6e7681"> over </tspan><tspan fill="#ff7b72">messy frontends</tspan></text></g>
-    <g clip-path="url(#c5)"><text x="28" y="210" xml:space="preserve"><tspan fill="#39ff14" font-weight="700">loop    </tspan><tspan fill="#56d4dd">learn</tspan><tspan fill="#6e7681"> → </tspan><tspan fill="#ffb454">build</tspan><tspan fill="#6e7681"> → </tspan><tspan fill="#39ff14">ship</tspan><tspan fill="#6e7681"> → </tspan><tspan fill="#b388eb">refactor</tspan></text></g>
-    <g clip-path="url(#c6)"><text x="28" y="236" xml:space="preserve"><tspan fill="#39ff14" font-weight="700">now     </tspan><tspan fill="#e6edf3">private enterprise projects</tspan><tspan fill="#6e7681">  </tspan><tspan fill="#39ff14">●</tspan></text></g>
+    <rect x="14" y="94" width="3" height="14" rx="1.5" fill="#8892d8"/>
+    <g clip-path="url(#c1)"><text x="28" y="106" xml:space="preserve"><tspan fill="#8892d8" font-weight="700">main    </tspan><tspan fill="#8892d8">PHP</tspan><tspan fill="#6e7681">  ·  </tspan><tspan fill="#b388eb">C#</tspan></text></g>
+    <rect x="14" y="120" width="3" height="14" rx="1.5" fill="#6aa9ff"/>
+    <g clip-path="url(#c2)"><text x="28" y="132" xml:space="preserve"><tspan fill="#6aa9ff" font-weight="700">class   </tspan><tspan fill="#6aa9ff">full-stack</tspan><tspan fill="#6e7681">, </tspan><tspan fill="#39ff14">backend</tspan><tspan fill="#e6edf3"> by nature</tspan></text></g>
+    <rect x="14" y="146" width="3" height="14" rx="1.5" fill="#ffb454"/>
+    <g clip-path="url(#c3)"><text x="28" y="158" xml:space="preserve"><tspan fill="#ffb454" font-weight="700">craft   </tspan><tspan fill="#ffb454">payment flows</tspan><tspan fill="#6e7681"> · </tspan><tspan fill="#56d4dd">dashboards</tspan><tspan fill="#6e7681"> · </tspan><tspan fill="#39ff14">Excel pipelines</tspan></text></g>
+    <rect x="14" y="172" width="3" height="14" rx="1.5" fill="#ff7b72"/>
+    <g clip-path="url(#c4)"><text x="28" y="184" xml:space="preserve"><tspan fill="#ff7b72" font-weight="700">creed   </tspan><tspan fill="#39ff14">clean APIs</tspan><tspan fill="#6e7681"> over </tspan><tspan fill="#ff7b72">messy frontends</tspan></text></g>
+    <rect x="14" y="198" width="3" height="14" rx="1.5" fill="#56d4dd"/>
+    <g clip-path="url(#c5)"><text x="28" y="210" xml:space="preserve"><tspan fill="#56d4dd" font-weight="700">loop    </tspan><tspan fill="#56d4dd">learn</tspan><tspan fill="#6e7681"> → </tspan><tspan fill="#ffb454">build</tspan><tspan fill="#6e7681"> → </tspan><tspan fill="#39ff14">ship</tspan><tspan fill="#6e7681"> → </tspan><tspan fill="#b388eb">refactor</tspan></text></g>
+    <rect x="14" y="224" width="3" height="14" rx="1.5" fill="#b388eb"/>
+    <g clip-path="url(#c6)"><text x="28" y="236" xml:space="preserve"><tspan fill="#b388eb" font-weight="700">now     </tspan><tspan fill="#e6edf3">private enterprise projects</tspan><tspan fill="#6e7681">  </tspan><tspan fill="#39ff14">●</tspan></text></g>
     <text x="28" y="262" opacity="0"><tspan fill="#39ff14">$</tspan> <tspan fill="#39ff14">_</tspan><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.01;0.5;0.51;1" dur="1s" begin="6.0s" repeatCount="indefinite"/></text>
   </g>
 </svg>
