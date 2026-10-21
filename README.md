@@ -50,6 +50,10 @@
 <img src="https://skillicons.dev/icons?i=mysql,postgres,redis,docker,git,github,githubactions,nginx,linux,postman&theme=dark&perline=10" alt="Databases and tools" />
 <br>
 <img src="./art/tools-clients.svg" alt="FileZilla, WinSCP, PuTTY, Termius" />
+<br><br>
+<img src="./art/label-cloud.svg" alt="cloud, occasional" width="320" />
+<br>
+<img src="./art/tools-cloud.svg" alt="Cloudflare, R2, MinIO, S3" />
 
 </div>
 

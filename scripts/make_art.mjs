@@ -101,6 +101,31 @@ note("note-langs", "Languages are counted per repository (including private ones
   write("tools-clients", svg(w, h, "FileZilla, WinSCP, PuTTY, Termius", body));
 }
 
+// 3c. cloud / object-storage tiles + label
+{
+  const cloud = "M14 34a7 7 0 0 1 1-13.9A9 9 0 0 1 32.5 17.5 8 8 0 0 1 34 34z";
+  const bucket = (c) => `<ellipse cx="24" cy="15" rx="12" ry="4" fill="none" stroke="${c}" stroke-width="2.6"/><path d="M12 15l3 19c0 2 4 4 9 4s9-2 9-4l3-19" fill="none" stroke="${c}" stroke-width="2.6" stroke-linejoin="round"/>`;
+  const tiles = [
+    ["Cloudflare", `<path d="${cloud}" fill="#f6821f" fill-opacity="0.2" stroke="#f6821f" stroke-width="2.8" stroke-linejoin="round"/>`],
+    ["R2", `<path d="${cloud}" fill="none" stroke="#f6821f" stroke-width="2.6" stroke-linejoin="round"/><text x="24" y="31" text-anchor="middle" fill="#f6821f" style="font-size:12px;font-weight:700">R2</text>`],
+    ["MinIO", `<g fill="none" stroke="#e0425f" stroke-width="2.6" stroke-linejoin="round"><rect x="9" y="10" width="30" height="8" rx="2"/><rect x="9" y="20" width="30" height="8" rx="2"/><rect x="9" y="30" width="30" height="8" rx="2"/></g><circle cx="15" cy="14" r="1.6" fill="#e0425f"/><circle cx="15" cy="24" r="1.6" fill="#e0425f"/><circle cx="15" cy="34" r="1.6" fill="#e0425f"/>`],
+    ["S3", bucket("#7aa116")],
+  ];
+  const TW = 48, G = 18, w = tiles.length * TW + (tiles.length - 1) * G + 20, h = 76;
+  const body = tiles.map(([name, glyph], i) => {
+    const x = 10 + i * (TW + G);
+    return `  <g transform="translate(${x} 4)"><rect width="${TW}" height="${TW}" rx="10" fill="#242938"/>${glyph}</g>\n  <text x="${x + TW / 2}" y="68" text-anchor="middle" class="m" style="font-size:11px">${name}</text>`;
+  }).join("\n");
+  write("tools-cloud", svg(w, h, "Cloudflare, R2, MinIO, S3", body));
+
+  const lw = 320, text = "cloud · occasional", tw = (text.length + 4) * CW, lx1 = (lw - tw) / 2 - 10, lx2 = (lw + tw) / 2 + 10;
+  write("label-cloud", svg(lw, 28, text, `  <defs><linearGradient id="l" x1="0" x2="1"><stop offset="0" stop-color="#4cc9f0" stop-opacity="0"/><stop offset="1" stop-color="#4cc9f0" stop-opacity="0.6"/></linearGradient>
+  <linearGradient id="r" x1="1" x2="0"><stop offset="0" stop-color="#4cc9f0" stop-opacity="0"/><stop offset="1" stop-color="#4cc9f0" stop-opacity="0.6"/></linearGradient></defs>
+  <rect x="10" y="13" width="${lx1 - 10}" height="1.5" fill="url(#l)"/>
+  <rect x="${lx2}" y="13" width="${lw - 10 - lx2}" height="1.5" fill="url(#r)"/>
+  <text x="${lw / 2}" y="18" text-anchor="middle" fill="#4cc9f0">[ ${esc(text)} ]</text>`));
+}
+
 // 4. footer
 write("footer", svg(560, 56, "end of transmission", `  <defs><linearGradient id="a" x1="0" x2="1"><stop offset="0" stop-color="#39ff14" stop-opacity="0"/><stop offset="0.5" stop-color="#39ff14" stop-opacity="0.7"/><stop offset="1" stop-color="#39ff14" stop-opacity="0"/></linearGradient></defs>
   <rect x="40" y="10" width="480" height="1.5" fill="url(#a)"/>
