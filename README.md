@@ -83,6 +83,16 @@
 
 <br>
 
+## ⌁ maps
+
+<div align="center">
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/core/maps.light.svg"><img src="./assets/core/maps.svg" alt="Maps: addresses to coordinates through Wialon, Nominatim and Yandex, then an optimized route" width="100%" /></picture>
+
+</div>
+
+<br>
+
 ## ⌁ focus
 
 <div align="center">

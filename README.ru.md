@@ -83,6 +83,16 @@
 
 <br>
 
+## ⌁ карты
+
+<div align="center">
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/core/maps.ru.light.svg"><img src="./assets/core/maps.ru.svg" alt="Карты: адреса в координаты через Wialon, Nominatim и Yandex, затем оптимальный маршрут" width="100%" /></picture>
+
+</div>
+
+<br>
+
 ## ⌁ фокус
 
 <div align="center">

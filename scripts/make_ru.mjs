@@ -17,6 +17,17 @@ const FILES = {
     ["03 / backbone", "03 / основа"], ["APIs &amp; background jobs", "API и фоновые задачи"],
     ["Clean REST APIs with solid", "Чистые REST API с надёжной"], ["auth, queues and scheduled", "авторизацией, очередями и"], ["work that runs by itself.", "задачами по расписанию."],
   ],
+  maps: [
+    ["Maps: addresses to coordinates through Wialon, Nominatim and Yandex, then an optimized route", "Карты: адреса в координаты через Wialon, Nominatim и Yandex, затем оптимальный маршрут"],
+    ["geocode chain", "цепочка геокодеров"],
+    [">start<", ">старт<"],
+    ["geocoder · units · routes", "геокодер · юниты · маршруты"],
+    ["OpenStreetMap · fallback", "OpenStreetMap · запасной"],
+    ["geocoder · fallback", "геокодер · запасной"],
+    [">route<", ">маршрут<"],
+    ["order · legs · live", "порядок · перегоны · live"],
+    ["addresses → coordinates → optimized route, streamed as they resolve", "адреса → координаты → оптимальный маршрут, по мере геокодинга"],
+  ],
   focus: [
     ["Current focus: learning new .NET and Laravel patterns, building private enterprise projects, shipping payment flows, dashboards and APIs", "Текущий фокус: учусь новым паттернам .NET и Laravel, строю частные корпоративные проекты, выпускаю платёжные потоки, дашборды и API"],
     [">LEARNING<", ">УЧУСЬ<"], [">BUILDING<", ">СТРОЮ<"], [">SHIPPING<", ">ВЫПУСКАЮ<"],
