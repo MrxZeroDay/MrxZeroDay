@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="560" height="220" viewBox="0 0 560 220" role="img" aria-label="MrxZeroDay: 1,533 contributions in the last year">
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="220" viewBox="0 0 560 220" role="img" aria-label="MrxZeroDay: 1,284 contributions in the last year">
   <style>
     .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; }
     .dim { fill: #6e7681; font-size: 12px; }
@@ -19,11 +19,11 @@
     <circle cx="24" cy="20" r="5" fill="#ff5f56"/><circle cx="42" cy="20" r="5" fill="#ffbd2e"/><circle cx="60" cy="20" r="5" fill="#27c93f"/>
     <text x="280" y="24" text-anchor="middle" class="mono dim">gh stats --year</text>
     <text x="28" y="68" class="mono dim">MrxZeroDay · since 2022</text>
-    <text x="28" y="130" class="mono big">1,533</text>
+    <text x="28" y="130" class="mono big">1,284</text>
     <text x="28" y="154" class="mono cap">contributions</text>
     <text x="28" y="171" class="mono cap">in the last year</text>
     <line x1="270" y1="55" x2="270" y2="190" stroke="#1f3a28"/>
-    <text x="300" y="78" class="mono num">325</text><text x="300" y="94" class="mono lab">commits</text><text x="425" y="78" class="mono num">19</text><text x="425" y="94" class="mono lab">pull requests</text><text x="300" y="128" class="mono num">1</text><text x="300" y="144" class="mono lab">issues</text><text x="425" y="128" class="mono num">0</text><text x="425" y="144" class="mono lab">reviews</text><text x="300" y="178" class="mono num">38</text><text x="300" y="194" class="mono lab">repositories</text><text x="425" y="178" class="mono num">0</text><text x="425" y="194" class="mono lab">stars</text>
+    <text x="300" y="78" class="mono num">27</text><text x="300" y="94" class="mono lab">commits</text><text x="425" y="78" class="mono num">3</text><text x="425" y="94" class="mono lab">pull requests</text><text x="300" y="128" class="mono num">0</text><text x="300" y="144" class="mono lab">issues</text><text x="425" y="128" class="mono num">0</text><text x="425" y="144" class="mono lab">reviews</text><text x="300" y="178" class="mono num">37</text><text x="300" y="194" class="mono lab">repositories</text><text x="425" y="178" class="mono num">0</text><text x="425" y="194" class="mono lab">stars</text>
     <circle class="pulse" cx="534" cy="196" r="4" fill="#39ff14"/>
     <text x="522" y="200" text-anchor="end" class="mono dim">followers 0</text>
   </g>
