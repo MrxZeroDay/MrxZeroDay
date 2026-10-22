@@ -26,9 +26,9 @@ const STRINGS = {
     labels: { main: "main", also: "also", tools: "tools", favorites: "favorite tools" },
     cloud: "cloud · occasional",
     occasional: "occasional",
-    stackTitle: "ls --all  #  libraries, payments, hosting",
-    stackAria: "Libraries, payments, hosting and patterns",
-    groups: { laravel: "laravel", ".net": ".net", frontend: "frontend", data: "data", payments: "payments", hosting: "hosting", ops: "ops", cloud: "cloud", clients: "clients", patterns: "patterns" },
+    stackTitle: "ls --all  #  libraries, payments, maps, hosting",
+    stackAria: "Libraries, payments, maps, hosting and patterns",
+    groups: { laravel: "laravel", ".net": ".net", frontend: "frontend", data: "data", payments: "payments", maps: "maps", hosting: "hosting", ops: "ops", cloud: "cloud", clients: "clients", patterns: "patterns" },
     items: {},
     notes: {
       client: "Client work is private, so there are no public repos to link here.",
@@ -42,10 +42,10 @@ const STRINGS = {
     labels: { main: "основное", also: "ещё", tools: "инструменты", favorites: "любимые инструменты" },
     cloud: "облако · иногда",
     occasional: "иногда",
-    stackTitle: "ls --all  #  библиотеки, платежи, хостинг",
-    stackAria: "Библиотеки, платежи, хостинг и паттерны",
-    groups: { laravel: "laravel", ".net": ".net", frontend: "frontend", data: "данные", payments: "платежи", hosting: "хостинг", ops: "ops", cloud: "облако", clients: "клиенты", patterns: "паттерны" },
-    items: { "Custom gateways": "Свои шлюзы", "Background jobs": "Фоновые задачи" },
+    stackTitle: "ls --all  #  библиотеки, платежи, карты, хостинг",
+    stackAria: "Библиотеки, платежи, карты, хостинг и паттерны",
+    groups: { laravel: "laravel", ".net": ".net", frontend: "frontend", data: "данные", payments: "платежи", maps: "карты", hosting: "хостинг", ops: "ops", cloud: "облако", clients: "клиенты", patterns: "паттерны" },
+    items: { "Custom gateways": "Свои шлюзы", "Background jobs": "Фоновые задачи", "Route optimization": "Оптимизация маршрутов" },
     notes: {
       client: "Работы для клиентов закрытые, поэтому публичных репозиториев для ссылок нет.",
       private: "Большая часть моей работы в приватных репозиториях, поэтому профиль показывает лишь малую её часть.",
@@ -55,13 +55,14 @@ const STRINGS = {
   },
 };
 
-const COLORS = { laravel: "#ff7a59", ".net": "#6aa9ff", frontend: "#ffd866", data: "#56d4dd", payments: "#ffb454", hosting: "#39ff14", ops: "#c3e88d", clients: "#b388eb", cloud: "#4cc9f0", patterns: "#ff7b72" };
+const COLORS = { laravel: "#ff7a59", ".net": "#6aa9ff", frontend: "#ffd866", data: "#56d4dd", payments: "#ffb454", maps: "#e0425f", hosting: "#39ff14", ops: "#c3e88d", clients: "#b388eb", cloud: "#4cc9f0", patterns: "#ff7b72" };
 const groups = [
   ["laravel", ["Livewire", "Horizon", "Sanctum", "Passport", "Spatie", "Inertia", "Pest", "PHPUnit"]],
   [".net", ["ASP.NET Core", "Entity Framework", "Dapper", "SignalR", "Blazor", "Quartz.NET", "Hangfire", "JWT Bearer", "Swagger", "xUnit", "Radzen", "MudBlazor", "Blazor-ApexCharts"]],
   ["frontend", ["TypeScript", "Vue", "Nuxt", "Tailwind", "Bootstrap", "Vite", "Alpine.js"]],
   ["data", ["MSSQL", "Elasticsearch", "EPPlus", "NPOI", "OpenXml"]],
   ["payments", ["Stripe", "PayPal", "Visa", "Mastercard", "ArCa", "Evocabank API", "Custom gateways"]],
+  ["maps", ["Wialon", "Yandex Geocoder", "Nominatim", "OpenStreetMap", "Route optimization"]],
   ["hosting", ["FASTPANEL", "ISPmanager", "Nginx"]],
   ["ops", ["Supervisor", "Sentry", "GitHub Actions"]],
   ["cloud", ["Cloudflare", "R2", "MinIO", "S3"], true],

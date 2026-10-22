@@ -22,7 +22,7 @@ const PAIRS = [
   ["Main: PHP, Laravel, C#, .NET", "Основное: PHP, Laravel, C#, .NET"],
   ["Also: JavaScript,", "Ещё: JavaScript,"], ["Databases and tools", "Базы данных и инструменты"],
   ["Favorite tools: Visual Studio", "Любимое: Visual Studio"],
-  ["Libraries, payments, hosting and patterns", "Библиотеки, платежи, хостинг и паттерны"],
+  ["Libraries, payments, maps, hosting and patterns", "Библиотеки, платежи, карты, хостинг и паттерны"],
   ["Maps: addresses to coordinates through Wialon, Nominatim and Yandex, then an optimized route", "Карты: адреса в координаты через Wialon, Nominatim и Yandex, затем оптимальный маршрут"],
   ["Payment integrations, dashboards and reports, APIs and background jobs", "Платёжные интеграции, дашборды и отчёты, API и фоновые задачи"],
   ["Client work is private, so there are no public repos to link here.", "Работы для клиентов закрытые, поэтому публичных репозиториев для ссылок нет."],
