@@ -65,7 +65,7 @@
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: light)" srcset="./assets/art/stack-more.light.svg"><img src="./assets/art/stack-more.svg" alt="Libraries, payments, hosting and patterns" width="760" /></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/art/stack-more.light.svg"><img src="./assets/art/stack-more.svg" alt="Libraries, payments, maps, hosting and patterns" width="760" /></picture>
 
 </div>
 

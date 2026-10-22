@@ -65,7 +65,7 @@
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: light)" srcset="./assets/art/stack-more.ru.light.svg"><img src="./assets/art/stack-more.ru.svg" alt="Библиотеки, платежи, хостинг и паттерны" width="760" /></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/art/stack-more.ru.light.svg"><img src="./assets/art/stack-more.ru.svg" alt="Библиотеки, платежи, карты, хостинг и паттерны" width="760" /></picture>
 
 </div>
 
