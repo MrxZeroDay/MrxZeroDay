@@ -25,10 +25,6 @@
 
 <br>
 
-<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/langs.light.svg"><img src="./assets/data/langs.svg" alt="Repositories by primary language" width="560" /></picture>
-
-<picture><source media="(prefers-color-scheme: light)" srcset="./assets/art/note-langs.light.svg"><img src="./assets/art/note-langs.svg" alt="Languages are counted per repository (including private ones), not as a measure of skill." /></picture>
-
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/art/note-private.light.svg"><img src="./assets/art/note-private.svg" alt="Most of my work lives in private repositories, so this profile shows only a small part of it." /></picture>
 
 </div>
@@ -134,10 +130,6 @@
 <br><br>
 
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/badges.light.svg"><img src="./assets/data/badges.svg" alt="Achievements unlocked from GitHub activity" width="560" /></picture>
-
-<br><br>
-
-<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/views.light.svg"><img src="./assets/data/views.svg" alt="Repository views over the last 14 days" width="560" /></picture>
 
 <br><br>
 

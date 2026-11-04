@@ -143,5 +143,3 @@ if __name__ == "__main__":
     user = fetch()
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(render(user))
-    with open(os.path.join(os.path.dirname(OUT) or ".", "langs.svg"), "w", encoding="utf-8") as f:
-        f.write(render_langs(user))

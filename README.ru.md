@@ -25,10 +25,6 @@
 
 <br>
 
-<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/langs.light.svg"><img src="./assets/data/langs.svg" alt="Репозитории по основному языку" width="560" /></picture>
-
-<picture><source media="(prefers-color-scheme: light)" srcset="./assets/art/note-langs.ru.light.svg"><img src="./assets/art/note-langs.ru.svg" alt="Языки считаются по репозиториям (включая приватные) и не отражают уровень навыков." /></picture>
-
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/art/note-private.ru.light.svg"><img src="./assets/art/note-private.ru.svg" alt="Большая часть моей работы в приватных репозиториях, поэтому профиль показывает лишь малую её часть." /></picture>
 
 </div>
@@ -134,10 +130,6 @@
 <br><br>
 
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/badges.light.svg"><img src="./assets/data/badges.svg" alt="Достижения по активности на GitHub" width="560" /></picture>
-
-<br><br>
-
-<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/views.light.svg"><img src="./assets/data/views.svg" alt="Просмотры репозитория за 14 дней" width="560" /></picture>
 
 <br><br>
 

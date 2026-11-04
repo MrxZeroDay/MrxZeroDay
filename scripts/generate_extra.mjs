@@ -1,5 +1,5 @@
 // Renders extra terminal-style cards from real GitHub data:
-// weekdays.svg, timeline.svg, badges.svg, recent.svg, now.svg, views.svg
+// weekdays.svg, timeline.svg, badges.svg, recent.svg, now.svg
 // Usage: GITHUB_TOKEN=... USERNAME=... node scripts/generate_extra.mjs assets/data
 import { readFileSync, writeFileSync } from "node:fs";
 
@@ -147,23 +147,4 @@ const days = user.contributionsCollection.contributionCalendar.weeks.flatMap((w)
   out("now", card("now.json", 62 + keys.length * 28 + 4, rows.join("\n    "), "What I am doing right now"));
 }
 
-// ---- views: repository page views for the last 14 days (best effort)
-try {
-  const res = await fetch(`https://api.github.com/repos/${USER}/${USER}/traffic/views`, { headers: { ...H, Accept: "application/vnd.github+json" } });
-  if (!res.ok) throw new Error(`traffic ${res.status}`);
-  const t = await res.json();
-  const v = (t.views || []).slice(-14);
-  const max = Math.max(1, ...v.map((d) => d.count));
-  const bars = v.map((d, i) => {
-    const h = Math.max(2, Math.round((50 * d.count) / max));
-    return `<rect x="${300 + i * 17}" y="${110 - h}" width="12" height="${h}" rx="2" fill="${d.count ? "#39ff14" : "#161b22"}"/>`;
-  });
-  const body = `<text x="28" y="88" class="mono num" style="font-size:34px">${fmt(t.count)}</text>
-    <text x="28" y="108" class="mono acc">views · 14 days</text>
-    <text x="28" y="126" class="mono dim">${fmt(t.uniques)} unique visitors</text>
-    ${bars.join("\n    ")}`;
-  out("views", card("traffic --views", 150, body, "Repository views over the last 14 days"));
-} catch (e) {
-  console.warn("views skipped:", e.message);
-}
 console.log("extra cards written");
