@@ -129,10 +129,6 @@
 
 <br><br>
 
-<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/badges.light.svg"><img src="./assets/data/badges.svg" alt="Achievements unlocked from GitHub activity" width="560" /></picture>
-
-<br><br>
-
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/art/footer.light.svg"><img src="./assets/art/footer.svg" alt="end of transmission" width="560" /></picture>
 
 </div>

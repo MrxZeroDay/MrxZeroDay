@@ -129,10 +129,6 @@
 
 <br><br>
 
-<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/badges.light.svg"><img src="./assets/data/badges.svg" alt="Достижения по активности на GitHub" width="560" /></picture>
-
-<br><br>
-
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/art/footer.ru.light.svg"><img src="./assets/art/footer.ru.svg" alt="конец передачи" width="560" /></picture>
 
 </div>

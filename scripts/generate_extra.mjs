@@ -1,5 +1,5 @@
 // Renders extra terminal-style cards from real GitHub data:
-// weekdays.svg, timeline.svg, badges.svg, recent.svg, now.svg
+// weekdays.svg, timeline.svg, recent.svg, now.svg
 // Usage: GITHUB_TOKEN=... USERNAME=... node scripts/generate_extra.mjs assets/data
 import { readFileSync, writeFileSync } from "node:fs";
 
@@ -92,32 +92,6 @@ const days = user.contributionsCollection.contributionCalendar.weeks.flatMap((w)
     <text x="${cx}" y="206" text-anchor="middle" class="mono dim">${repos[i]} repos</text>`;
   });
   out("timeline", card("git log --by-year", 226, `<line x1="40" y1="168" x2="520" y2="168" stroke="#1f3a28"/>\n    ${cols.join("\n    ")}`, "Contributions and new repositories per year"));
-}
-
-// ---- badges: unlocked by real numbers
-{
-  let run = 0, streakMax = 0;
-  for (const d of days) { run = d.contributionCount ? run + 1 : 0; streakMax = Math.max(streakMax, run); }
-  const total = user.contributionsCollection.contributionCalendar.totalContributions;
-  const stars = user.repositories.nodes.reduce((a, n) => a + n.stargazerCount, 0);
-  const age = new Date().getFullYear() - Number(user.createdAt.slice(0, 4));
-  const list = [
-    ["Veteran", "5+ years", age >= 5],
-    ["On fire", "7-day streak", streakMax >= 7],
-    ["Marathon", "30-day streak", streakMax >= 30],
-    ["Busy bee", "500+ / year", total >= 500],
-    ["Maker", "10+ repos", user.repositories.totalCount >= 10],
-    ["Shark", "merged PR", user.merged.totalCount >= 1],
-    ["Starred", "first star", stars >= 1],
-    ["Centurion", "1000+ / year", total >= 1000],
-  ];
-  const cells = list.map(([name, desc, ok], i) => {
-    const x = 24 + (i % 4) * 132, y = 50 + Math.floor(i / 4) * 70;
-    return `<g opacity="${ok ? 1 : 0.35}"><rect x="${x}" y="${y}" width="120" height="58" rx="8" fill="#161b22" stroke="${ok ? "#39ff14" : "#1f3a28"}"/>
-    <text x="${x + 10}" y="${y + 24}" class="mono txt">${ok ? "✔" : "·"} ${esc(name)}</text>
-    <text x="${x + 10}" y="${y + 43}" class="mono dim">${esc(desc)}</text></g>`;
-  });
-  out("badges", card("achievements --unlocked", 198, cells.join("\n    "), "Achievements unlocked from GitHub activity"));
 }
 
 // ---- recent: last pushed public repositories
