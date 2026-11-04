@@ -3,6 +3,7 @@ import json
 import os
 import sys
 import urllib.request
+from datetime import date, timedelta
 from html import escape
 
 USER = os.environ.get("USERNAME", "MrxZeroDay")
@@ -20,6 +21,7 @@ query($login: String!) {
     }
     contributionsCollection {
       totalCommitContributions
+      restrictedContributionsCount
       totalIssueContributions
       totalPullRequestContributions
       totalPullRequestReviewContributions
@@ -28,6 +30,35 @@ query($login: String!) {
   }
 }
 """
+
+
+SEARCH = """
+query($pr: String!, $issue: String!) {
+  pr: search(type: ISSUE, query: $pr) { issueCount }
+  issue: search(type: ISSUE, query: $issue) { issueCount }
+}
+"""
+
+
+def gql(query, variables):
+    req = urllib.request.Request(
+        "https://api.github.com/graphql",
+        data=json.dumps({"query": query, "variables": variables}).encode(),
+        headers={"Authorization": f"bearer {TOKEN}", "User-Agent": "profile-stats"},
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        payload = json.load(resp)
+    if "errors" in payload:
+        raise SystemExit(payload["errors"])
+    return payload["data"]
+
+
+def search_counts():
+    # contributionsCollection hides the per-type split for private repos; search sees them with a repo-scoped token
+    since = (date.today() - timedelta(days=365)).isoformat()
+    base = f"author:{USER} created:>={since}"
+    d = gql(SEARCH, {"pr": f"{base} type:pr", "issue": f"{base} type:issue"})
+    return d["pr"]["issueCount"], d["issue"]["issueCount"]
 
 
 def fetch():
@@ -45,12 +76,13 @@ def fetch():
 
 def render(u):
     cc = u["contributionsCollection"]
+    prs, issues = search_counts()
     stars = sum(n["stargazerCount"] for n in u["repositories"]["nodes"])
     since = u["createdAt"][:4]
     cells = [
-        ("commits", cc["totalCommitContributions"]),
-        ("pull requests", cc["totalPullRequestContributions"]),
-        ("issues", cc["totalIssueContributions"]),
+        ("private activity", cc["restrictedContributionsCount"]),
+        ("pull requests", prs),
+        ("issues", issues),
         ("reviews", cc["totalPullRequestReviewContributions"]),
         ("repositories", u["repositories"]["totalCount"]),
         ("stars", stars),
