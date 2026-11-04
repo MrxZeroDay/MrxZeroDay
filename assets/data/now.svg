@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="122" viewBox="0 0 560 122" role="img" aria-label="What I am doing right now">
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; }
+    .dim { fill: #6e7681; font-size: 11px; }
+    .txt { fill: #e6edf3; font-size: 13px; }
+    .cap { fill: #8b949e; font-size: 12px; }
+    .acc { fill: #39ff14; font-size: 12px; }
+    .num { fill: #e6edf3; font-size: 12px; font-weight: 700; }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#0a1f12"/></linearGradient>
+    <clipPath id="f"><rect x="5" y="5" width="550" height="112" rx="10"/></clipPath>
+  </defs>
+  <rect x="5" y="5" width="550" height="112" rx="10" fill="url(#bg)" stroke="#1f3a28" stroke-width="1.5"/>
+  <g clip-path="url(#f)">
+    <rect x="5" y="5" width="550" height="30" fill="#161b22"/>
+    <circle cx="24" cy="20" r="5" fill="#ff5f56"/><circle cx="42" cy="20" r="5" fill="#ffbd2e"/><circle cx="60" cy="20" r="5" fill="#27c93f"/>
+    <text x="280" y="24" text-anchor="middle" class="mono dim">now.json</text>
+    <text x="28" y="62" class="mono acc">learning</text><text x="140" y="62" class="mono txt">new .NET and Laravel patterns</text>
+    <text x="28" y="90" class="mono acc">building</text><text x="140" y="90" class="mono txt">private enterprise projects</text>
+  </g>
+</svg>

@@ -103,13 +103,41 @@
 
 <br>
 
+## ⌁ сейчас
+
+<div align="center">
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/now.light.svg"><img src="./assets/data/now.svg" alt="Чем я занимаюсь сейчас" width="560" /></picture>
+
+<br>
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/recent.light.svg"><img src="./assets/data/recent.svg" alt="Недавно обновлённые публичные репозитории" width="560" /></picture>
+
+</div>
+
+<br>
+
+## ⌁ активность
+
 <div align="center">
 
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/stats.light.svg"><img src="./assets/data/stats.svg" alt="Статистика GitHub за последний год" width="560" /></picture>
 
 <br><br>
 
-<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/streak.light.svg"><img src="./assets/data/streak.svg" alt="Серии активности за последний год" width="560" /></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/weekdays.light.svg"><img src="./assets/data/weekdays.svg" alt="Вклады по дням недели" width="560" /></picture>
+
+<br><br>
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/timeline.light.svg"><img src="./assets/data/timeline.svg" alt="Вклады и новые репозитории по годам" width="560" /></picture>
+
+<br><br>
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/badges.light.svg"><img src="./assets/data/badges.svg" alt="Достижения по активности на GitHub" width="560" /></picture>
+
+<br><br>
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/views.light.svg"><img src="./assets/data/views.svg" alt="Просмотры репозитория за 14 дней" width="560" /></picture>
 
 <br><br>
 

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="226" viewBox="0 0 560 226" role="img" aria-label="Contributions and new repositories per year">
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; }
+    .dim { fill: #6e7681; font-size: 11px; }
+    .txt { fill: #e6edf3; font-size: 13px; }
+    .cap { fill: #8b949e; font-size: 12px; }
+    .acc { fill: #39ff14; font-size: 12px; }
+    .num { fill: #e6edf3; font-size: 12px; font-weight: 700; }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#0a1f12"/></linearGradient>
+    <clipPath id="f"><rect x="5" y="5" width="550" height="216" rx="10"/></clipPath>
+  </defs>
+  <rect x="5" y="5" width="550" height="216" rx="10" fill="url(#bg)" stroke="#1f3a28" stroke-width="1.5"/>
+  <g clip-path="url(#f)">
+    <rect x="5" y="5" width="550" height="30" fill="#161b22"/>
+    <circle cx="24" cy="20" r="5" fill="#ff5f56"/><circle cx="42" cy="20" r="5" fill="#ffbd2e"/><circle cx="60" cy="20" r="5" fill="#27c93f"/>
+    <text x="280" y="24" text-anchor="middle" class="mono dim">git log --by-year</text>
+    <line x1="40" y1="168" x2="520" y2="168" stroke="#1f3a28"/>
+    <rect x="76" y="147" width="28" height="3" rx="4" fill="#1f6b35"/>
+    <text x="90" y="141" text-anchor="middle" class="mono num">5</text>
+    <circle cx="90" cy="168" r="4" fill="#39ff14"/>
+    <text x="90" y="190" text-anchor="middle" class="mono txt">2022</text>
+    <text x="90" y="206" text-anchor="middle" class="mono dim">1 repos</text>
+    <rect x="176" y="147" width="28" height="3" rx="4" fill="#1f6b35"/>
+    <text x="190" y="141" text-anchor="middle" class="mono num">0</text>
+    <circle cx="190" cy="168" r="4" fill="#6e7681"/>
+    <text x="190" y="190" text-anchor="middle" class="mono txt">2023</text>
+    <text x="190" y="206" text-anchor="middle" class="mono dim">0 repos</text>
+    <rect x="276" y="133" width="28" height="17" rx="4" fill="#1f6b35"/>
+    <text x="290" y="127" text-anchor="middle" class="mono num">287</text>
+    <circle cx="290" cy="168" r="4" fill="#6e7681"/>
+    <text x="290" y="190" text-anchor="middle" class="mono txt">2024</text>
+    <text x="290" y="206" text-anchor="middle" class="mono dim">4 repos</text>
+    <rect x="376" y="95" width="28" height="55" rx="4" fill="#1f6b35"/>
+    <text x="390" y="89" text-anchor="middle" class="mono num">924</text>
+    <circle cx="390" cy="168" r="4" fill="#6e7681"/>
+    <text x="390" y="190" text-anchor="middle" class="mono txt">2025</text>
+    <text x="390" y="206" text-anchor="middle" class="mono dim">14 repos</text>
+    <rect x="476" y="70" width="28" height="80" rx="4" fill="#39ff14"/>
+    <text x="490" y="64" text-anchor="middle" class="mono num">1,337</text>
+    <circle cx="490" cy="168" r="4" fill="#6e7681"/>
+    <text x="490" y="190" text-anchor="middle" class="mono txt">2026</text>
+    <text x="490" y="206" text-anchor="middle" class="mono dim">19 repos</text>
+  </g>
+</svg>

@@ -31,6 +31,9 @@ jobs:
       - name: Generate stats and language cards
         run: python3 scripts/generate_stats.py assets/data/stats.svg
 
+      - name: Generate extra cards (weekdays, timeline, badges, recent, now, views)
+        run: node scripts/generate_extra.mjs assets/data
+
       - name: Derive light theme variants
         run: node scripts/make_light.mjs
 

@@ -103,13 +103,41 @@
 
 <br>
 
+## ⌁ now
+
+<div align="center">
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/now.light.svg"><img src="./assets/data/now.svg" alt="What I am doing right now" width="560" /></picture>
+
+<br>
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/recent.light.svg"><img src="./assets/data/recent.svg" alt="Recently updated public repositories" width="560" /></picture>
+
+</div>
+
+<br>
+
+## ⌁ activity
+
 <div align="center">
 
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/stats.light.svg"><img src="./assets/data/stats.svg" alt="GitHub stats for the last year" width="560" /></picture>
 
 <br><br>
 
-<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/streak.light.svg"><img src="./assets/data/streak.svg" alt="Contribution streaks for the last year" width="560" /></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/weekdays.light.svg"><img src="./assets/data/weekdays.svg" alt="Contributions by day of the week" width="560" /></picture>
+
+<br><br>
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/timeline.light.svg"><img src="./assets/data/timeline.svg" alt="Contributions and new repositories per year" width="560" /></picture>
+
+<br><br>
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/badges.light.svg"><img src="./assets/data/badges.svg" alt="Achievements unlocked from GitHub activity" width="560" /></picture>
+
+<br><br>
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/views.light.svg"><img src="./assets/data/views.svg" alt="Repository views over the last 14 days" width="560" /></picture>
 
 <br><br>
 
