@@ -28,8 +28,8 @@
     <g opacity="1"><rect x="420" y="50" width="120" height="58" rx="8" fill="#161b22" stroke="#39ff14"/>
     <text x="430" y="74" class="mono txt">✔ Busy bee</text>
     <text x="430" y="93" class="mono dim">500+ / year</text></g>
-    <g opacity="1"><rect x="24" y="120" width="120" height="58" rx="8" fill="#161b22" stroke="#39ff14"/>
-    <text x="34" y="144" class="mono txt">✔ Maker</text>
+    <g opacity="0.35"><rect x="24" y="120" width="120" height="58" rx="8" fill="#161b22" stroke="#1f3a28"/>
+    <text x="34" y="144" class="mono txt">· Maker</text>
     <text x="34" y="163" class="mono dim">10+ repos</text></g>
     <g opacity="1"><rect x="156" y="120" width="120" height="58" rx="8" fill="#161b22" stroke="#39ff14"/>
     <text x="166" y="144" class="mono txt">✔ Shark</text>
