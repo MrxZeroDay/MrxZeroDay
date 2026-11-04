@@ -23,7 +23,7 @@ query($login: String!) {
       totalIssueContributions
       totalPullRequestContributions
       totalPullRequestReviewContributions
-      contributionCalendar { totalContributions }
+      contributionCalendar { totalContributions weeks { contributionDays { date contributionCount } } }
     }
   }
 }
@@ -139,8 +139,68 @@ def render_langs(u, top=6):
 """
 
 
+def streaks(u):
+    days = [d for w in u["contributionsCollection"]["contributionCalendar"]["weeks"] for d in w["contributionDays"]]
+    counts = [d["contributionCount"] for d in days]
+    longest = run = 0
+    for c in counts:
+        run = run + 1 if c else 0
+        longest = max(longest, run)
+    # today may still be empty: do not break the current streak because of it
+    trail = counts[:-1] if counts and counts[-1] == 0 else counts
+    current = 0
+    for c in reversed(trail):
+        if not c:
+            break
+        current += 1
+    best = max(days, key=lambda d: d["contributionCount"]) if days else None
+    return current, longest, sum(1 for c in counts if c), best
+
+
+def render_streak(u):
+    current, longest, active, best = streaks(u)
+    cells = [
+        (current, "current streak", "days"),
+        (longest, "longest streak", "days"),
+        (active, "active days", "last year"),
+        (best["contributionCount"] if best else 0, "best day", best["date"] if best else "-"),
+    ]
+    cols = []
+    for i, (value, label, sub) in enumerate(cells):
+        cx = 75 + i * 137
+        cols.append(
+            f'<text x="{cx}" y="92" text-anchor="middle" class="mono num">{value:,}</text>'
+            f'<text x="{cx}" y="114" text-anchor="middle" class="mono lab">{escape(label)}</text>'
+            f'<text x="{cx}" y="130" text-anchor="middle" class="mono dim">{escape(str(sub))}</text>'
+        )
+    seps = "".join(f'<line x1="{143 + i * 137}" y1="64" x2="{143 + i * 137}" y2="136" stroke="#1f3a28"/>' for i in range(3))
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="560" height="160" viewBox="0 0 560 160" role="img" aria-label="Contribution streaks for {escape(USER)}">
+  <style>
+    .mono {{ font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; }}
+    .dim {{ fill: #6e7681; font-size: 11px; }}
+    .num {{ fill: #e6edf3; font-size: 28px; font-weight: 700; }}
+    .lab {{ fill: #39ff14; font-size: 12px; }}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#0a1f12"/></linearGradient>
+    <clipPath id="f"><rect x="5" y="5" width="550" height="150" rx="10"/></clipPath>
+  </defs>
+  <rect x="5" y="5" width="550" height="150" rx="10" fill="url(#bg)" stroke="#1f3a28" stroke-width="1.5"/>
+  <g clip-path="url(#f)">
+    <rect x="5" y="5" width="550" height="30" fill="#161b22"/>
+    <circle cx="24" cy="20" r="5" fill="#ff5f56"/><circle cx="42" cy="20" r="5" fill="#ffbd2e"/><circle cx="60" cy="20" r="5" fill="#27c93f"/>
+    <text x="280" y="24" text-anchor="middle" class="mono dim">gh streak --year</text>
+    {seps}
+    {"".join(cols)}
+  </g>
+</svg>
+"""
+
+
 if __name__ == "__main__":
     user = fetch()
+    with open(os.path.join(os.path.dirname(OUT) or ".", "streak.svg"), "w", encoding="utf-8") as f:
+        f.write(render_streak(user))
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(render(user))
     with open(os.path.join(os.path.dirname(OUT) or ".", "langs.svg"), "w", encoding="utf-8") as f:

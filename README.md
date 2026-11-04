@@ -109,6 +109,10 @@
 
 <br><br>
 
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/streak.light.svg"><img src="./assets/data/streak.svg" alt="Contribution streaks for the last year" width="560" /></picture>
+
+<br><br>
+
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/art/footer.light.svg"><img src="./assets/art/footer.svg" alt="end of transmission" width="560" /></picture>
 
 </div>

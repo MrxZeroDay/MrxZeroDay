@@ -109,6 +109,10 @@
 
 <br><br>
 
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/data/streak.light.svg"><img src="./assets/data/streak.svg" alt="Серии активности за последний год" width="560" /></picture>
+
+<br><br>
+
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/art/footer.ru.light.svg"><img src="./assets/art/footer.ru.svg" alt="конец передачи" width="560" /></picture>
 
 </div>
