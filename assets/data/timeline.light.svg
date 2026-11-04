@@ -21,7 +21,7 @@
     <text x="90" y="141" text-anchor="middle" class="mono num">5</text>
     <circle cx="90" cy="168" r="4" fill="#1a7f37"/>
     <text x="90" y="190" text-anchor="middle" class="mono txt">2022</text>
-    <text x="90" y="206" text-anchor="middle" class="mono dim">0 repos</text>
+    <text x="90" y="206" text-anchor="middle" class="mono dim">1 repos</text>
     <rect x="176" y="147" width="28" height="3" rx="4" fill="#9ccbab"/>
     <text x="190" y="141" text-anchor="middle" class="mono num">0</text>
     <circle cx="190" cy="168" r="4" fill="#6e7781"/>
@@ -31,16 +31,16 @@
     <text x="290" y="127" text-anchor="middle" class="mono num">287</text>
     <circle cx="290" cy="168" r="4" fill="#6e7781"/>
     <text x="290" y="190" text-anchor="middle" class="mono txt">2024</text>
-    <text x="290" y="206" text-anchor="middle" class="mono dim">0 repos</text>
+    <text x="290" y="206" text-anchor="middle" class="mono dim">4 repos</text>
     <rect x="376" y="95" width="28" height="55" rx="4" fill="#9ccbab"/>
     <text x="390" y="89" text-anchor="middle" class="mono num">924</text>
     <circle cx="390" cy="168" r="4" fill="#6e7781"/>
     <text x="390" y="190" text-anchor="middle" class="mono txt">2025</text>
-    <text x="390" y="206" text-anchor="middle" class="mono dim">0 repos</text>
+    <text x="390" y="206" text-anchor="middle" class="mono dim">14 repos</text>
     <rect x="476" y="70" width="28" height="80" rx="4" fill="#1a7f37"/>
-    <text x="490" y="64" text-anchor="middle" class="mono num">1,338</text>
+    <text x="490" y="64" text-anchor="middle" class="mono num">1,341</text>
     <circle cx="490" cy="168" r="4" fill="#6e7781"/>
     <text x="490" y="190" text-anchor="middle" class="mono txt">2026</text>
-    <text x="490" y="206" text-anchor="middle" class="mono dim">2 repos</text>
+    <text x="490" y="206" text-anchor="middle" class="mono dim">19 repos</text>
   </g>
 </svg>

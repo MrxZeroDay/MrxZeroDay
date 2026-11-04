@@ -18,23 +18,23 @@
     <text x="280" y="24" text-anchor="middle" class="mono dim">activity --by-weekday</text>
     <text x="28" y="63" class="mono cap">Mon</text>
     <rect x="75" y="52" width="300" height="14" rx="4" fill="#eaeef2"/>
-    <rect x="75" y="52" width="205" height="14" rx="4" fill="#9ccbab"/>
+    <rect x="75" y="52" width="204" height="14" rx="4" fill="#9ccbab"/>
     <text x="390" y="63" class="mono num">239</text>
     <text x="28" y="87" class="mono cap">Tue</text>
     <rect x="75" y="76" width="300" height="14" rx="4" fill="#eaeef2"/>
-    <rect x="75" y="76" width="274" height="14" rx="4" fill="#9ccbab"/>
+    <rect x="75" y="76" width="272" height="14" rx="4" fill="#9ccbab"/>
     <text x="390" y="87" class="mono num">319</text>
     <text x="28" y="111" class="mono cap">Wed</text>
     <rect x="75" y="100" width="300" height="14" rx="4" fill="#eaeef2"/>
     <rect x="75" y="100" width="300" height="14" rx="4" fill="#1a7f37"/>
-    <text x="390" y="111" class="mono num">349</text>
+    <text x="390" y="111" class="mono num">352</text>
     <text x="28" y="135" class="mono cap">Thu</text>
     <rect x="75" y="124" width="300" height="14" rx="4" fill="#eaeef2"/>
-    <rect x="75" y="124" width="229" height="14" rx="4" fill="#9ccbab"/>
+    <rect x="75" y="124" width="227" height="14" rx="4" fill="#9ccbab"/>
     <text x="390" y="135" class="mono num">266</text>
     <text x="28" y="159" class="mono cap">Fri</text>
     <rect x="75" y="148" width="300" height="14" rx="4" fill="#eaeef2"/>
-    <rect x="75" y="148" width="266" height="14" rx="4" fill="#9ccbab"/>
+    <rect x="75" y="148" width="263" height="14" rx="4" fill="#9ccbab"/>
     <text x="390" y="159" class="mono num">309</text>
     <text x="28" y="183" class="mono cap">Sat</text>
     <rect x="75" y="172" width="300" height="14" rx="4" fill="#eaeef2"/>
