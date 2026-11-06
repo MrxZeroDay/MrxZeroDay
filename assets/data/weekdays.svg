@@ -34,8 +34,8 @@
     <text x="390" y="135" class="mono num">267</text>
     <text x="28" y="159" class="mono cap">Fri</text>
     <rect x="75" y="148" width="300" height="14" rx="4" fill="#161b22"/>
-    <rect x="75" y="148" width="260" height="14" rx="4" fill="#1f6b35"/>
-    <text x="390" y="159" class="mono num">309</text>
+    <rect x="75" y="148" width="297" height="14" rx="4" fill="#1f6b35"/>
+    <text x="390" y="159" class="mono num">353</text>
     <text x="28" y="183" class="mono cap">Sat</text>
     <rect x="75" y="172" width="300" height="14" rx="4" fill="#161b22"/>
     <rect x="75" y="172" width="15" height="14" rx="4" fill="#1f6b35"/>
