@@ -18,24 +18,24 @@
     <text x="280" y="24" text-anchor="middle" class="mono dim">activity --by-weekday</text>
     <text x="28" y="63" class="mono cap">Mon</text>
     <rect x="75" y="52" width="300" height="14" rx="4" fill="#161b22"/>
-    <rect x="75" y="52" width="201" height="14" rx="4" fill="#1f6b35"/>
-    <text x="390" y="63" class="mono num">239</text>
+    <rect x="75" y="52" width="202" height="14" rx="4" fill="#1f6b35"/>
+    <text x="390" y="63" class="mono num">236</text>
     <text x="28" y="87" class="mono cap">Tue</text>
     <rect x="75" y="76" width="300" height="14" rx="4" fill="#161b22"/>
     <rect x="75" y="76" width="269" height="14" rx="4" fill="#1f6b35"/>
-    <text x="390" y="87" class="mono num">319</text>
+    <text x="390" y="87" class="mono num">314</text>
     <text x="28" y="111" class="mono cap">Wed</text>
     <rect x="75" y="100" width="300" height="14" rx="4" fill="#161b22"/>
-    <rect x="75" y="100" width="300" height="14" rx="4" fill="#39ff14"/>
-    <text x="390" y="111" class="mono num">356</text>
+    <rect x="75" y="100" width="291" height="14" rx="4" fill="#1f6b35"/>
+    <text x="390" y="111" class="mono num">340</text>
     <text x="28" y="135" class="mono cap">Thu</text>
     <rect x="75" y="124" width="300" height="14" rx="4" fill="#161b22"/>
-    <rect x="75" y="124" width="225" height="14" rx="4" fill="#1f6b35"/>
-    <text x="390" y="135" class="mono num">267</text>
+    <rect x="75" y="124" width="227" height="14" rx="4" fill="#1f6b35"/>
+    <text x="390" y="135" class="mono num">265</text>
     <text x="28" y="159" class="mono cap">Fri</text>
     <rect x="75" y="148" width="300" height="14" rx="4" fill="#161b22"/>
-    <rect x="75" y="148" width="297" height="14" rx="4" fill="#1f6b35"/>
-    <text x="390" y="159" class="mono num">353</text>
+    <rect x="75" y="148" width="300" height="14" rx="4" fill="#39ff14"/>
+    <text x="390" y="159" class="mono num">350</text>
     <text x="28" y="183" class="mono cap">Sat</text>
     <rect x="75" y="172" width="300" height="14" rx="4" fill="#161b22"/>
     <rect x="75" y="172" width="15" height="14" rx="4" fill="#1f6b35"/>
@@ -43,6 +43,6 @@
     <text x="28" y="207" class="mono cap">Sun</text>
     <rect x="75" y="196" width="300" height="14" rx="4" fill="#161b22"/>
     <rect x="75" y="196" width="4" height="14" rx="4" fill="#1f6b35"/>
-    <text x="390" y="207" class="mono num">0</text>
+    <text x="390" y="207" class="mono num">1</text>
   </g>
 </svg>
