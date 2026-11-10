@@ -19,7 +19,7 @@
     <text x="450" y="24" text-anchor="middle" class="dim">git log --graph --year</text>
     <text x="870" y="86" text-anchor="end" class="big">1,524</text>
     <text x="870" y="108" text-anchor="end" class="cap">contributions in the last year</text>
-    <text x="870" y="124" text-anchor="end" class="cap">2025-11-09 → 2026-11-09</text>
+    <text x="870" y="124" text-anchor="end" class="cap">2025-11-09 → 2026-11-10</text>
     <g class="b" style="animation-delay:0.00s"><title>2025-11-09: 0</title><polygon points="121.1,170.0 132.8,176.7 132.8,175.2 121.1,168.5" fill="#caccce"/><polygon points="132.8,176.7 144.4,170.0 144.4,168.5 132.8,175.2" fill="#a9abad"/><polygon points="132.8,161.8 144.4,168.5 132.8,175.2 121.1,168.5" fill="#ebedf0"/></g>
     <g class="b" style="animation-delay:0.00s"><title>2025-11-10: 8</title><polygon points="107.6,177.8 119.3,184.5 119.3,154.2 107.6,147.5" fill="#298a43"/><polygon points="119.3,184.5 130.9,177.8 130.9,147.5 119.3,154.2" fill="#237438"/><polygon points="119.3,140.8 130.9,147.5 119.3,154.2 107.6,147.5" fill="#30a14e"/></g>
     <g class="b" style="animation-delay:0.03s"><title>2025-11-16: 0</title><polygon points="134.6,177.8 146.3,184.5 146.3,183.0 134.6,176.3" fill="#caccce"/><polygon points="146.3,184.5 157.9,177.8 157.9,176.3 146.3,183.0" fill="#a9abad"/><polygon points="146.3,169.6 157.9,176.3 146.3,183.0 134.6,176.3" fill="#ebedf0"/></g>
@@ -380,6 +380,7 @@
     <g class="b" style="animation-delay:1.23s"><title>2026-10-23: 10</title><polygon points="715.1,591.2 726.8,597.9 726.8,564.0 715.1,557.3" fill="#1c5f31"/><polygon points="726.8,597.9 738.4,591.2 738.4,557.3 726.8,564.0" fill="#184f29"/><polygon points="726.8,550.6 738.4,557.3 726.8,564.0 715.1,557.3" fill="#216e39"/></g>
     <g class="b" style="animation-delay:1.25s"><title>2026-10-29: 8</title><polygon points="742.1,591.2 753.8,597.9 753.8,567.6 742.1,560.9" fill="#298a43"/><polygon points="753.8,597.9 765.4,591.2 765.4,560.9 753.8,567.6" fill="#237438"/><polygon points="753.8,554.2 765.4,560.9 753.8,567.6 742.1,560.9" fill="#30a14e"/></g>
     <g class="b" style="animation-delay:1.28s"><title>2026-11-04: 15</title><polygon points="769.1,591.2 780.8,597.9 780.8,556.4 769.1,549.7" fill="#1c5f31"/><polygon points="780.8,597.9 792.4,591.2 792.4,549.7 780.8,556.4" fill="#184f29"/><polygon points="780.8,543.0 792.4,549.7 780.8,556.4 769.1,549.7" fill="#216e39"/></g>
+    <g class="b" style="animation-delay:1.30s"><title>2026-11-10: 0</title><polygon points="796.1,591.2 807.8,597.9 807.8,596.4 796.1,589.7" fill="#caccce"/><polygon points="807.8,597.9 819.4,591.2 819.4,589.7 807.8,596.4" fill="#a9abad"/><polygon points="807.8,583.0 819.4,589.7 807.8,596.4 796.1,589.7" fill="#ebedf0"/></g>
     <g class="b" style="animation-delay:1.23s"><title>2026-10-24: 0</title><polygon points="701.6,599.0 713.3,605.7 713.3,604.2 701.6,597.5" fill="#caccce"/><polygon points="713.3,605.7 724.9,599.0 724.9,597.5 713.3,604.2" fill="#a9abad"/><polygon points="713.3,590.8 724.9,597.5 713.3,604.2 701.6,597.5" fill="#ebedf0"/></g>
     <g class="b" style="animation-delay:1.25s"><title>2026-10-30: 87</title><polygon points="728.6,599.0 740.3,605.7 740.3,505.7 728.6,499.0" fill="#1c5f31"/><polygon points="740.3,605.7 751.9,599.0 751.9,499.0 740.3,505.7" fill="#184f29"/><polygon points="740.3,492.3 751.9,499.0 740.3,505.7 728.6,499.0" fill="#216e39"/></g>
     <g class="b" style="animation-delay:1.28s"><title>2026-11-05: 1</title><polygon points="755.6,599.0 767.3,605.7 767.3,595.0 755.6,588.3" fill="#85c890"/><polygon points="767.3,605.7 778.9,599.0 778.9,588.3 767.3,595.0" fill="#70a879"/><polygon points="767.3,581.6 778.9,588.3 767.3,595.0 755.6,588.3" fill="#9be9a8"/></g>
@@ -388,7 +389,7 @@
     <g class="b" style="animation-delay:1.28s"><title>2026-11-07: 0</title><polygon points="728.6,614.6 740.3,621.3 740.3,619.8 728.6,613.1" fill="#caccce"/><polygon points="740.3,621.3 751.9,614.6 751.9,613.1 740.3,619.8" fill="#a9abad"/><polygon points="740.3,606.4 751.9,613.1 740.3,619.8 728.6,613.1" fill="#ebedf0"/></g>
     <text x="28" y="674" class="num">87</text><text x="28" y="692" class="cap">best day · 2026-10-30</text>
     <text x="250" y="674" class="num">5 days</text><text x="250" y="692" class="cap">longest streak</text>
-    <text x="400" y="674" class="num">1 days</text><text x="400" y="692" class="cap">current streak</text>
+    <text x="400" y="674" class="num">0 days</text><text x="400" y="692" class="cap">current streak</text>
     <text x="704" y="704" class="cap">less</text><rect x="744" y="694" width="12" height="12" rx="3" fill="#ebedf0"/><rect x="762" y="694" width="12" height="12" rx="3" fill="#9be9a8"/><rect x="780" y="694" width="12" height="12" rx="3" fill="#40c463"/><rect x="798" y="694" width="12" height="12" rx="3" fill="#30a14e"/><rect x="816" y="694" width="12" height="12" rx="3" fill="#216e39"/><text x="840" y="704" class="cap">more</text>
   </g>
 </svg>
