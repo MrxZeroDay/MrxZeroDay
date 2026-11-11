@@ -27,8 +27,8 @@
     <circle cx="190" cy="168" r="4" fill="#6e7781"/>
     <text x="190" y="190" text-anchor="middle" class="mono txt">2023</text>
     <text x="190" y="206" text-anchor="middle" class="mono dim">0 repos</text>
-    <rect x="276" y="133" width="28" height="17" rx="4" fill="#9ccbab"/>
-    <text x="290" y="127" text-anchor="middle" class="mono num">287</text>
+    <rect x="276" y="134" width="28" height="16" rx="4" fill="#9ccbab"/>
+    <text x="290" y="128" text-anchor="middle" class="mono num">287</text>
     <circle cx="290" cy="168" r="4" fill="#6e7781"/>
     <text x="290" y="190" text-anchor="middle" class="mono txt">2024</text>
     <text x="290" y="206" text-anchor="middle" class="mono dim">4 repos</text>
@@ -38,7 +38,7 @@
     <text x="390" y="190" text-anchor="middle" class="mono txt">2025</text>
     <text x="390" y="206" text-anchor="middle" class="mono dim">14 repos</text>
     <rect x="476" y="70" width="28" height="80" rx="4" fill="#1a7f37"/>
-    <text x="490" y="64" text-anchor="middle" class="mono num">1,391</text>
+    <text x="490" y="64" text-anchor="middle" class="mono num">1,392</text>
     <circle cx="490" cy="168" r="4" fill="#6e7781"/>
     <text x="490" y="190" text-anchor="middle" class="mono txt">2026</text>
     <text x="490" y="206" text-anchor="middle" class="mono dim">19 repos</text>

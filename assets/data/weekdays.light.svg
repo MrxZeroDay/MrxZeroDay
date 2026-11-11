@@ -26,8 +26,8 @@
     <text x="390" y="87" class="mono num">314</text>
     <text x="28" y="111" class="mono cap">Wed</text>
     <rect x="75" y="100" width="300" height="14" rx="4" fill="#eaeef2"/>
-    <rect x="75" y="100" width="291" height="14" rx="4" fill="#9ccbab"/>
-    <text x="390" y="111" class="mono num">340</text>
+    <rect x="75" y="100" width="292" height="14" rx="4" fill="#9ccbab"/>
+    <text x="390" y="111" class="mono num">341</text>
     <text x="28" y="135" class="mono cap">Thu</text>
     <rect x="75" y="124" width="300" height="14" rx="4" fill="#eaeef2"/>
     <rect x="75" y="124" width="227" height="14" rx="4" fill="#9ccbab"/>
