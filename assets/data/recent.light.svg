@@ -19,7 +19,7 @@
     <circle cx="32" cy="56" r="5" fill="#f1e05a"/>
     <text x="46" y="60" class="mono txt">MrxZeroDay</text>
     <text x="46" y="75" class="mono dim">Profile README of MrxZeroDay: full-stack developer,…</text>
-    <text x="530" y="60" text-anchor="end" class="mono cap">2026-11-10</text>
+    <text x="530" y="60" text-anchor="end" class="mono cap">2026-11-11</text>
     <circle cx="32" cy="94" r="5" fill="#dea584"/>
     <text x="46" y="98" class="mono txt">nopeat</text>
     <text x="46" y="113" class="mono dim">Bundle analysis in Rust</text>
