@@ -30,8 +30,8 @@
     <text x="390" y="111" class="mono num">353</text>
     <text x="28" y="135" class="mono cap">Thu</text>
     <rect x="75" y="124" width="300" height="14" rx="4" fill="#161b22"/>
-    <rect x="75" y="124" width="226" height="14" rx="4" fill="#1f6b35"/>
-    <text x="390" y="135" class="mono num">266</text>
+    <rect x="75" y="124" width="233" height="14" rx="4" fill="#1f6b35"/>
+    <text x="390" y="135" class="mono num">274</text>
     <text x="28" y="159" class="mono cap">Fri</text>
     <rect x="75" y="148" width="300" height="14" rx="4" fill="#161b22"/>
     <rect x="75" y="148" width="297" height="14" rx="4" fill="#1f6b35"/>
