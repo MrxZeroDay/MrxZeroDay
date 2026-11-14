@@ -19,7 +19,7 @@
     <text x="450" y="24" text-anchor="middle" class="dim">git log --graph --year</text>
     <text x="870" y="86" text-anchor="end" class="big">1,547</text>
     <text x="870" y="108" text-anchor="end" class="cap">вкладов за последний год</text>
-    <text x="870" y="124" text-anchor="end" class="cap">2025-11-09 → 2026-11-13</text>
+    <text x="870" y="124" text-anchor="end" class="cap">2025-11-09 → 2026-11-14</text>
     <g class="b" style="animation-delay:0.00s"><title>2025-11-09: 0</title><polygon points="121.1,170.0 132.8,176.7 132.8,175.2 121.1,168.5" fill="#121821"/><polygon points="132.8,176.7 144.4,170.0 144.4,168.5 132.8,175.2" fill="#0c1116"/><polygon points="132.8,161.8 144.4,168.5 132.8,175.2 121.1,168.5" fill="#1b2430"/></g>
     <g class="b" style="animation-delay:0.00s"><title>2025-11-10: 8</title><polygon points="107.6,177.8 119.3,184.5 119.3,154.2 107.6,147.5" fill="#209432"/><polygon points="119.3,184.5 130.9,177.8 130.9,147.5 119.3,154.2" fill="#166422"/><polygon points="119.3,140.8 130.9,147.5 119.3,154.2 107.6,147.5" fill="#2fd94a"/></g>
     <g class="b" style="animation-delay:0.03s"><title>2025-11-16: 0</title><polygon points="134.6,177.8 146.3,184.5 146.3,183.0 134.6,176.3" fill="#121821"/><polygon points="146.3,184.5 157.9,177.8 157.9,176.3 146.3,183.0" fill="#0c1116"/><polygon points="146.3,169.6 157.9,176.3 146.3,183.0 134.6,176.3" fill="#1b2430"/></g>
@@ -390,9 +390,10 @@
     <g class="b" style="animation-delay:1.30s"><title>2026-11-12: 9</title><polygon points="769.1,606.8 780.8,613.5 780.8,581.3 769.1,574.6" fill="#209432"/><polygon points="780.8,613.5 792.4,606.8 792.4,574.6 780.8,581.3" fill="#166422"/><polygon points="780.8,567.9 792.4,574.6 780.8,581.3 769.1,574.6" fill="#2fd94a"/></g>
     <g class="b" style="animation-delay:1.28s"><title>2026-11-07: 0</title><polygon points="728.6,614.6 740.3,621.3 740.3,619.8 728.6,613.1" fill="#121821"/><polygon points="740.3,621.3 751.9,614.6 751.9,613.1 740.3,619.8" fill="#0c1116"/><polygon points="740.3,606.4 751.9,613.1 740.3,619.8 728.6,613.1" fill="#1b2430"/></g>
     <g class="b" style="animation-delay:1.30s"><title>2026-11-13: 0</title><polygon points="755.6,614.6 767.3,621.3 767.3,619.8 755.6,613.1" fill="#121821"/><polygon points="767.3,621.3 778.9,614.6 778.9,613.1 767.3,619.8" fill="#0c1116"/><polygon points="767.3,606.4 778.9,613.1 767.3,619.8 755.6,613.1" fill="#1b2430"/></g>
+    <g class="b" style="animation-delay:1.30s"><title>2026-11-14: 0</title><polygon points="742.1,622.4 753.8,629.1 753.8,627.6 742.1,620.9" fill="#121821"/><polygon points="753.8,629.1 765.4,622.4 765.4,620.9 753.8,627.6" fill="#0c1116"/><polygon points="753.8,614.2 765.4,620.9 753.8,627.6 742.1,620.9" fill="#1b2430"/></g>
     <text x="28" y="674" class="num">87</text><text x="28" y="692" class="cap">лучший день · 2026-10-30</text>
     <text x="250" y="674" class="num">5 дней</text><text x="250" y="692" class="cap">самая длинная серия</text>
-    <text x="400" y="674" class="num">3 дня</text><text x="400" y="692" class="cap">текущая серия</text>
+    <text x="400" y="674" class="num">0 дней</text><text x="400" y="692" class="cap">текущая серия</text>
     <text x="704" y="704" class="cap">мало</text><rect x="744" y="694" width="12" height="12" rx="3" fill="#1b2430"/><rect x="762" y="694" width="12" height="12" rx="3" fill="#0f6b2a"/><rect x="780" y="694" width="12" height="12" rx="3" fill="#17a336"/><rect x="798" y="694" width="12" height="12" rx="3" fill="#2fd94a"/><rect x="816" y="694" width="12" height="12" rx="3" fill="#39ff14"/><text x="840" y="704" class="cap">много</text>
   </g>
 </svg>
