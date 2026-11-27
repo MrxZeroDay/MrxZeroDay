@@ -30,12 +30,12 @@
     <text x="390" y="111" class="mono num">350</text>
     <text x="28" y="135" class="mono cap">Thu</text>
     <rect x="75" y="124" width="300" height="14" rx="4" fill="#eaeef2"/>
-    <rect x="75" y="124" width="252" height="14" rx="4" fill="#9ccbab"/>
-    <text x="390" y="135" class="mono num">294</text>
+    <rect x="75" y="124" width="257" height="14" rx="4" fill="#9ccbab"/>
+    <text x="390" y="135" class="mono num">300</text>
     <text x="28" y="159" class="mono cap">Fri</text>
     <rect x="75" y="148" width="300" height="14" rx="4" fill="#eaeef2"/>
-    <rect x="75" y="148" width="293" height="14" rx="4" fill="#9ccbab"/>
-    <text x="390" y="159" class="mono num">342</text>
+    <rect x="75" y="148" width="294" height="14" rx="4" fill="#9ccbab"/>
+    <text x="390" y="159" class="mono num">343</text>
     <text x="28" y="183" class="mono cap">Sat</text>
     <rect x="75" y="172" width="300" height="14" rx="4" fill="#eaeef2"/>
     <rect x="75" y="172" width="15" height="14" rx="4" fill="#9ccbab"/>
